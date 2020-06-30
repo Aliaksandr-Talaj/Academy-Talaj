@@ -7,7 +7,7 @@ public class Main0 {
 		Scanner scanner = new Scanner (System.in);
 		String month=scanner.nextLine();
 		scanner.close();
-		switch month {
+		switch (month) {
 	case "€нварь":	
 		System.out.println("1");
 		break;
@@ -45,8 +45,7 @@ public class Main0 {
 		System.out.println("12");
 		break;	
 	default:
-		System.out.println("нет такого мес€ца")
+		System.out.println("нет такого мес€ца");
 		}
 	}
 }
-
