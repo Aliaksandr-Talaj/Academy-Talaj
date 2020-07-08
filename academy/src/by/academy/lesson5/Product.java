@@ -18,7 +18,7 @@ public class Product {
 	public void setProductName(String productName) {
 		this.productName=productName;
 	}
-	public Sting getProductName() {
+	public String getProductName() {
 		return productName;
 	}
 	
