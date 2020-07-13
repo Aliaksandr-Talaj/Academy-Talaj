@@ -50,7 +50,21 @@ class Food extends Product{
 		this.price=price;
 		this.productDescription=productDescription;
 	}};
-class Medicine extends Product{};
-class Weapon extends Product{};
+class Medicine extends Product{
+
+	public Medicine(String productName, double price, String productDescription) {
+		super();
+		this.productName=productName;
+		this.price=price;
+		this.productDescription=productDescription;
+	}};
+class Weapon extends Product{
+
+	public Weapon(String productName, double price, String productDescription) {
+		super();
+		this.productName=productName;
+		this.price=price;
+		this.productDescription=productDescription;
+	}};
 
 
