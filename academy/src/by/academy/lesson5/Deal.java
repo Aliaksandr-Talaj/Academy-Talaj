@@ -5,7 +5,8 @@ public class Deal {
 	private User seller;
 	private User buyer;
 	private Product[] products;
-	
+	private Integer [] quantity;
+	private Double [] stackPrice;
 	public Deal(){
 		super();
 	}
@@ -29,10 +30,28 @@ public class Deal {
 	public User getBuyer() {
 		return buyer;
 	}
-	public void setProduct(Product[] products) {
+	public void setDealProduct(Product[] products) {
 		this.products=products;
 	}
-	public Product[] getProduct() {
+	
+	public Product[] getDealProduct() {
 		return products;
 	}
+	public void setQuantity(Integer[] quantity) {
+		this.quantity=quantity;
+	}
+	
+	public Integer[] getQuantity() {
+		return quantity;
+	}
+
+	public Double [] getStackPrice() {
+		return stackPrice;
+	}
+
+	public void setStackPrice(Double [] stackPrice) {
+		this.stackPrice = stackPrice;
+	}
+
+
 }
