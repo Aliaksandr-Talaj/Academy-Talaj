@@ -18,7 +18,7 @@ public class Main {
 		User stalker = new User (sc.nextLine());
 		deal1.setBuyer(stalker);
 		System.out.println("Список товаров:\n");
-		System.out.println("Наименование\t\t\tЦена, руб\tОписание товара");
+		System.out.println("Наименование\t\t\tЦена, руб\tСкидка, %\tОписание товара");
 				
 		for (Product p:Pricelist.pricelist) {
 			System.out.print("\n"+p.getProductName()+"\t\t\t");
@@ -27,7 +27,7 @@ public class Main {
 				System.out.print("\t");
 				i+=4;
 			};
-			System.out.print(p.getProductPrice()+"\t\t"+p.getProductDescription());
+			System.out.print(p.getProductPrice()+"\t\t\t"+p.getDiscountPercent()+"\t"+p.getProductDescription());
 		}; 
 		System.out.println("\nЖелаете совершить покупку? (да/нет)");
 		String wannaBuy=sc.nextLine();
@@ -49,8 +49,8 @@ public class Main {
 						int q=sc.nextInt();
 						productsList.add(counter, p);
 						quantityList.add(counter,q);
-						stackPrice.add(counter,q*p.getProductPrice());
-						totalPrice+=q*p.getProductPrice();
+						stackPrice.add(counter,q*p.getDiscountPrice());
+						totalPrice+=q*p.getDiscountPrice();
 						counter++;
 					}
 				}

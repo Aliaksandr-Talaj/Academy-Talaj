@@ -5,6 +5,7 @@ public class Product {
 	public String productName;
 	public double price;
 	public String productDescription;
+	public int	discountPercent;
 	
 	public Product() {
 		super();
@@ -20,6 +21,13 @@ public class Product {
 		this.productName=productName;
 		this.price=price;
 		this.productDescription=productDescription;
+	}
+	public Product(String productName, double price, String productDescription, int discountPercent) {
+		super();
+		this.productName=productName;
+		this.price=price;
+		this.productDescription=productDescription;
+		this.discountPercent=discountPercent;
 	}
 	
 	public void setProductName(String productName) {
@@ -38,8 +46,12 @@ public class Product {
 	public double getProductPrice() {
 		return price;
 	}	
-	
-	
+	public int getDiscountPercent() {
+		return discountPercent;
+	}
+	public double getDiscountPrice() {
+		return this.price*(100-discountPercent)/100;
+	}
 	
 }
 class Food extends Product{
@@ -49,7 +61,16 @@ class Food extends Product{
 		this.productName=productName;
 		this.price=price;
 		this.productDescription=productDescription;
-	}};
+	}
+	public Food(String productName, double price, String productDescription, int discountPercent) {
+		super();
+		this.productName=productName;
+		this.price=price;
+		this.productDescription=productDescription;
+		this.discountPercent=discountPercent;
+
+	}
+}
 class Medicine extends Product{
 
 	public Medicine(String productName, double price, String productDescription) {
@@ -57,7 +78,15 @@ class Medicine extends Product{
 		this.productName=productName;
 		this.price=price;
 		this.productDescription=productDescription;
-	}};
+	}
+	public Medicine(String productName, double price, String productDescription, int discountPercent) {
+		super();
+		this.productName=productName;
+		this.price=price;
+		this.productDescription=productDescription;
+		this.discountPercent=discountPercent;
+	}
+}
 class Weapon extends Product{
 
 	public Weapon(String productName, double price, String productDescription) {
@@ -65,6 +94,13 @@ class Weapon extends Product{
 		this.productName=productName;
 		this.price=price;
 		this.productDescription=productDescription;
-	}};
-
+}
+	public Weapon (String productName, double price, String productDescription, int discountPercent) {
+		super();
+		this.productName=productName;
+		this.price=price;
+		this.productDescription=productDescription;
+		this.discountPercent=discountPercent;
+	}
+}
 
