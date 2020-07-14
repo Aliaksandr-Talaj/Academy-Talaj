@@ -1,4 +1,4 @@
-package by.academy.classwork.lesson6.task1;
+package by.academy.classwork.lesson6.Task2;
 
 public class Person {
 
