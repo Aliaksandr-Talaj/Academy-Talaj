@@ -4,12 +4,12 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Task5 {
-	
+
 	static int pairs(int k, int[] arr) {
 		int pairsCount = 0;
-		for (int i=0; i<arr.length; i++) {
-			for (int j=0; j<arr.length;j++) {
-				if (arr[i]-arr[j]==k) {
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr.length; j++) {
+				if (arr[i] - arr[j] == k) {
 					pairsCount++;
 				}
 			}
@@ -42,4 +42,3 @@ public class Task5 {
 		scanner.close();
 	}
 }
-

@@ -58,6 +58,6 @@ public class Task1 {
 		// преобразование всегда производитс€ в сторону уменьшени€
 		
 		// вывод
-		System.out.println("‘инальна€ цена "+sum);	
+		System.out.println("‘инальна€ цена " + sum);
 	}
 }
