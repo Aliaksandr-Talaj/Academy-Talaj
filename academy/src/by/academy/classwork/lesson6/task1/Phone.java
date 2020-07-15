@@ -1,10 +1,10 @@
 package by.academy.classwork.lesson6.task1;
 
 public class Phone {
-	String number;
-	String model;
-	double weight;
-	String name;
+	private String number;
+	private String model;
+	private double weight;
+	private String name;
 	
 	public Phone() {
 		super();

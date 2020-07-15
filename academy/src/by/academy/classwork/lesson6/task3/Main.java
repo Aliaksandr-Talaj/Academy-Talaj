@@ -1,4 +1,4 @@
-package by.academy.classwork.lesson6.Task3;
+package by.academy.classwork.lesson6.task3;
 
 public class Main {
 
