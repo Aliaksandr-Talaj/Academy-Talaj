@@ -1,5 +1,7 @@
 package by.academy.classwork.lesson6.task3;
 
+import java.util.Arrays;
+
 public class Матрица {
 	
 	private double [][] matrix;
@@ -12,7 +14,7 @@ public class Матрица {
 	public Матрица(double [][] matrix, int rows, int columns){
 		this.rows = rows;
 		this.columns = columns;
-		this.matrix = matrix;
+		this.matrix = Arrays.copyOf(matrix, matrix.length);
 	}
 	
 	public double[][] summing(double [][] matrix){
@@ -44,7 +46,7 @@ public class Матрица {
 	public void setMatrix(double [][] matrix, int rows, int columns){
 		this.rows = rows;
 		this.columns = columns;
-		this.matrix = matrix;
+		this.matrix = Arrays.copyOf(matrix, matrix.length);
 	}
 	public double[][] getMatrix(){
 		return this.matrix;
