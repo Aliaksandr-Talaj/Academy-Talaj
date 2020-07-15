@@ -33,7 +33,6 @@ public class Task5 {
 
 		for (int i = 0; i < n; i++) {
 			arr[i] = Integer.parseInt(arrItems[i]);
-//			System.out.println(arr[i]);
 		}
 
 		int result = pairs(k, arr);
