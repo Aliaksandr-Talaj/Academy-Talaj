@@ -2,8 +2,8 @@ package by.academy.classwork.lesson6.task2;
 
 public class Person {
 
-	public String fullName;
-	public int age;
+	private String fullName;
+	private int age;
 	
 	public void move() {
 		System.out.println(this.fullName+" двигается");
@@ -16,7 +16,13 @@ public class Person {
 	}
 	public Person(String fullName, int age) {
 		this.fullName=fullName;
-		this.age=age;
+		this.setAge(age);
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
 	}
 	
 }

@@ -4,11 +4,11 @@ import by.academy.classwork.professions.*;
 import by.academy.classwork.details.*;
 
 public class Car {
-	String carBrand;
-	String carClass;
-	double carWeight;
-	Driver carDriver;
-	Engine carEngine;
+	protected String carBrand;
+	protected String carClass;
+	protected double carWeight;
+	protected Driver carDriver;
+	protected Engine carEngine;
 	
 	public void start() {
 			System.out.println("Поехали");

@@ -40,9 +40,7 @@ public class Матрица {
 			}
 			System.out.println();
 		}
-		
 	}
-	
 	public void setMatrix(double [][] matrix, int rows, int columns){
 		this.rows = rows;
 		this.columns = columns;
