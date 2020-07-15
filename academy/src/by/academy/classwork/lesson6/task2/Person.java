@@ -5,12 +5,6 @@ public class Person {
 	private String fullName;
 	private int age;
 	
-	public void move() {
-		System.out.println(this.fullName+" двигается");
-	}
-	public void talk() {
-		System.out.println(this.fullName+" говорит");
-	}
 	public Person() {
 		super();
 	}
@@ -21,8 +15,14 @@ public class Person {
 	public int getAge() {
 		return age;
 	}
+	public void move() {
+		System.out.println(this.fullName+" двигается");
+	}
 	public void setAge(int age) {
 		this.age = age;
+	}
+	public void talk() {
+		System.out.println(this.fullName+" говорит");
 	}
 	
 }

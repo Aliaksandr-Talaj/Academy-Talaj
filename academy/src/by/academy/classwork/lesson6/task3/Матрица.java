@@ -17,12 +17,7 @@ public class Матрица {
 		this.matrix = Arrays.copyOf(matrix, matrix.length);
 	}
 	
-	public double[][] summing(double [][] matrix){
-		for (int i=0; i<this.rows;i++) {
-			for (int j=0; j<this.columns; j++) {
-				this.matrix[i][j]=this.matrix[i][j]+matrix[i][j];
-			}
-		}
+	public double[][] getMatrix(){
 		return this.matrix;
 	}
 	public double[][] multiplying(int multiplyer){
@@ -46,7 +41,12 @@ public class Матрица {
 		this.columns = columns;
 		this.matrix = Arrays.copyOf(matrix, matrix.length);
 	}
-	public double[][] getMatrix(){
+	public double[][] summing(double [][] matrix){
+		for (int i=0; i<this.rows;i++) {
+			for (int j=0; j<this.columns; j++) {
+				this.matrix[i][j]=this.matrix[i][j]+matrix[i][j];
+			}
+		}
 		return this.matrix;
 	}
 	
