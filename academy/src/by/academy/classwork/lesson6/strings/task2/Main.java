@@ -14,7 +14,6 @@ public class Main {
 			strings[i] = sc.next();
 		}
 		sc.close();
-
 		for (int i = 0; i < strings.length; i++) {
 			String temp;
 			for (int j = 0; j < strings.length; j++) {
@@ -25,8 +24,8 @@ public class Main {
 				}
 			}
 		}
-		for (String i: strings) {
-			System.out.println(i+" ");
+		for (String i : strings) {
+			System.out.println(i + " ");
 		}
 	}
 }
