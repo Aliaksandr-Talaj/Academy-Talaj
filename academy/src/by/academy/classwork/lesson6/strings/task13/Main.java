@@ -14,14 +14,18 @@ public class Main {
 		System.out.println("введите c:");
 		double c = sc.nextDouble();
 		sc.close();
-		double d = Math.pow(b, 2) - 4 * a * c;
-		if (d < 0) {
-			System.out.println("Уравнение не имеет корней");
-		} else if (d == 0) {
-			System.out.println((-1 * b) / (2 * a));
+		if (a == 0) {
+			System.out.println("x = " + (-c / b));
 		} else {
-			System.out.println("x1 = " + ((-b + Math.sqrt(d)) / (2 * a)));
-			System.out.println("x2 = " + ((-b - Math.sqrt(d)) / (2 * a)));
+			double d = Math.pow(b, 2) - 4 * a * c;
+			if (d < 0) {
+				System.out.println("Уравнение не имеет корней");
+			} else if (d == 0) {
+				System.out.println((-1 * b) / (2 * a));
+			} else {
+				System.out.println("x1 = " + ((-b + Math.sqrt(d)) / (2 * a)));
+				System.out.println("x2 = " + ((-b - Math.sqrt(d)) / (2 * a)));
+			}
 		}
 	}
 }
