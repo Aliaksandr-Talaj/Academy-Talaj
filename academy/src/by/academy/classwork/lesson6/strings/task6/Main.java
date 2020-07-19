@@ -3,9 +3,9 @@ package by.academy.classwork.lesson6.strings.task6;
 import java.util.Scanner;
 
 public class Main {
-
+	
 	public static void main(String[] args) {
-		System.out.println("¬ведите слова в строку:");
+		System.out.println("¬ведите слова в строку через пробел:");
 		Scanner sc = new Scanner(System.in);
 		String string = new String();
 		string = sc.nextLine();
@@ -25,5 +25,4 @@ public class Main {
 			}
 		}
 	}
-
 }

@@ -5,16 +5,29 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("¬ведите слова в строку:");
-		Scanner sc = new Scanner (System.in);
-		String string = new String ();
+		System.out.println("¬ведите слова в строку через пробел:");
+		Scanner sc = new Scanner(System.in);
+		String string = new String();
 		string = sc.nextLine();
 		sc.close();
-		String [] words = string.split(" +");
-		
-		for (String i:words) {
-			System.out.println(i);
+		String[] words = string.split(" +");
+		int unics = 0;
+		int counter = 0;
+		for (String i : words) {
+			unics = 0;
+			for (int j = 0; j < i.length(); j++) {
+				if (i.lastIndexOf(i.charAt(j)) == j) {
+					unics++;
+				}
+			}
+			if (unics == i.length()) {
+				System.out.print("ѕервое слово, состо€щее только из различных символов - " + i);
+				counter++;
+				break;
+			}
+		}
+		if (counter == 0) {
+			System.out.print("—лова, состо€щие только из различных символов, не найдены");
 		}
 	}
-
 }
