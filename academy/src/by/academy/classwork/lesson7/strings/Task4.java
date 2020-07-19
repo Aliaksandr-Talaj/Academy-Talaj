@@ -5,17 +5,22 @@ public class Task4 {
 
 		StringBuilder sbl = new StringBuilder();
 		StringBuffer sbf = new StringBuffer();
+		String str = "";
 		long start = System.currentTimeMillis();
-		for (int i=0; i<100000000; i++) {
-			sbl =sbl.append("a");
+		for (int i = 0; i < 100_000_000; i++) {
+			sbl = sbl.append("a");
 		}
-		
 		System.out.println("Время выполнения StringBuilder, мс: " + (System.currentTimeMillis() - start));
 		start = System.currentTimeMillis();
-		for (int i=0; i<100000000; i++) {
-			sbf =sbf.append("a");
+		for (int i = 0; i < 100_000_000; i++) {
+			sbf = sbf.append("a");
 		}
-		
 		System.out.println("Время выполнения StringBuffer, мс: " + (System.currentTimeMillis() - start));
+
+		start = System.currentTimeMillis();
+		for (int i = 0; i < 100_000; i++) {
+			str = str.concat("a");
+		}
+		System.out.println("Время выполнения String, мс: " + (System.currentTimeMillis() - start));
 	}
 }
