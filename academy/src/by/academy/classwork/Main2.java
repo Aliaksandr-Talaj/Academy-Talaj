@@ -11,5 +11,6 @@ public class Main2 {
 		System.out.println("your age is: "+myAge+", passport number: "+passportNumber);
 		System.out.println("you got "+yourMark);
 		System.out.println("your average mark is "+averageMark);
+		System.out.println(test);
 	}
 }

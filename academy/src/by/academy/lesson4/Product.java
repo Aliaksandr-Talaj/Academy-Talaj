@@ -2,10 +2,10 @@ package by.academy.lesson4;
 
 public class Product {
 
-	double price;
+	private double price;
 	private double discount;
-	String name;
-	int quantity;
+	private String name;
+	private int quantity;
 	
 	public Product(String name, double price, int quantity) {
 		super();
