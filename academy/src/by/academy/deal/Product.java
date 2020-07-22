@@ -1,11 +1,11 @@
-package by.academy.lesson5;
+package by.academy.deal;
 
 public class Product {
 
-	public String productName;
-	public double price;
-	public String productDescription;
-	public int discountPercent;
+	protected String productName;
+	protected double price;
+	protected String productDescription;
+	protected int discountPercent;
 
 	public Product() {
 		super();
