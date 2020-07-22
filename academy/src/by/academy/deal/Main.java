@@ -34,9 +34,7 @@ public class Main {
 		System.out.println("\nЖелаете совершить покупку? (да/нет)");
 		String wannaBuy = sc.nextLine();
 		wannaBuy = wannaBuy.toLowerCase();
-		if (wannaBuy.contentEquals("да")) {
-			deal1.vending();
-		}
+			
 		System.out.println(deal1.toString());
 		
 		sc.close();

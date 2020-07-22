@@ -1,8 +1,8 @@
 package by.academy.deal;
 
-import java.util.Date;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Scanner;
 
@@ -15,6 +15,7 @@ public class Deal {
 	private Double[] stackPrice;
 	private Date deadlineDate;
 	private double totalPrice;
+	private DealStatus status;
 
 	public Deal() {
 		super();
@@ -27,6 +28,7 @@ public class Deal {
 		this.buyer = buyer;
 		this.products = products;
 		init();
+		this.status = DealStatus.NEW;
 	}
 
 	public User getBuyer() {
@@ -66,7 +68,7 @@ public class Deal {
 	public void setBuyer(User buyer) {
 		this.buyer = buyer;
 	}
-		
+
 	public void setDealProduct(Product[] products) {
 		this.products = products;
 	}
@@ -85,6 +87,8 @@ public class Deal {
 
 	@Override
 	public String toString() {
+		this.status = DealStatus.DONE;
+
 		StringBuilder builder = new StringBuilder();
 
 		builder.append("");
@@ -113,40 +117,46 @@ public class Deal {
 	}
 
 	public void vending() {
-	Scanner sc = new Scanner(System.in);
-	String wannaBuy;
-	ArrayList<Product> productsList = new ArrayList<Product>();
-	ArrayList<Integer> quantitiesList = new ArrayList<Integer>();
-	ArrayList<Double> stackPrices = new ArrayList<Double>();
-	boolean buyMore = true;
-	int counter = 0;
-	while (buyMore) {
-		System.out.println("¬ведите наименование необходимого товара");
-		String good = sc.next();
-		good = good.toLowerCase();
-		for (Product p : Pricelist.getProduct()) {
-			if (p.getProductName().toLowerCase().contentEquals(good)) {
 
-				System.out.println("¬ведите необходимое количество данного товара");
-				int q = sc.nextInt();
-				productsList.add(counter, p);
-				quantitiesList.add(counter, q);
-				stackPrices.add(counter, q * p.getDiscountPrice());
-				totalPrice += q * p.getDiscountPrice();
-				counter++;
+		this.status = DealStatus.IN_PROGRESS;
+		Scanner sc = new Scanner(System.in);
+		String wannaBuy;
+		ArrayList<Product> productsList = new ArrayList<Product>();
+		ArrayList<Integer> quantitiesList = new ArrayList<Integer>();
+		ArrayList<Double> stackPrices = new ArrayList<Double>();
+		boolean buyMore = true;
+		int counter = 0;
+		while (buyMore) {
+			System.out.println("¬ведите наименование необходимого товара");
+			String good = sc.next();
+			good = good.toLowerCase();
+			for (Product p : Pricelist.getProduct()) {
+				if (p.getProductName().toLowerCase().contentEquals(good)) {
+
+					System.out.println("¬ведите необходимое количество данного товара");
+					int q = sc.nextInt();
+					productsList.add(counter, p);
+					quantitiesList.add(counter, q);
+					stackPrices.add(counter, q * p.getDiscountPrice());
+					totalPrice += q * p.getDiscountPrice();
+					counter++;
+				}
+			}
+			System.out.println("∆елаете совершить ещЄ покупку? (да/нет)");
+			wannaBuy = sc.next();
+			wannaBuy = wannaBuy.toLowerCase();
+			buyMore = false;
+			if (wannaBuy.contentEquals("да")) {
+				buyMore = true;
 			}
 		}
-		System.out.println("∆елаете совершить ещЄ покупку? (да/нет)");
-		wannaBuy = sc.next();
-		wannaBuy = wannaBuy.toLowerCase();
-		buyMore = false;
-		if (wannaBuy.contentEquals("да")) {
-			buyMore = true;
-		}
+		setDealProduct(productsList.toArray(new Product[productsList.size()]));
+		setQuantity(quantitiesList.toArray(new Integer[productsList.size()]));
+		setStackPrice(stackPrices.toArray(new Double[productsList.size()]));
+		sc.close();
 	}
-	setDealProduct(productsList.toArray(new Product[productsList.size()]));
-	setQuantity(quantitiesList.toArray(new Integer[productsList.size()]));
-	setStackPrice(stackPrices.toArray(new Double[productsList.size()]));
-	sc.close();
+
+	public DealStatus getStatus() {
+		return status;
 	}
 }

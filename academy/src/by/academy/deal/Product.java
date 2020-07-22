@@ -1,5 +1,6 @@
 package by.academy.deal;
 
+
 public class Product {
 
 	protected String productName;
@@ -62,7 +63,8 @@ public class Product {
 
 }
 
-class Food extends Product {
+	@ProducerInfo(company="Колхоз \"Ник\"", name = "", number = 2020317, productType = {"продукт питания","алкоголь"})
+	class Food extends Product {
 
 	public Food(String productName, double price, String productDescription) {
 		super();
@@ -81,6 +83,7 @@ class Food extends Product {
 	}
 }
 
+	@ProducerInfo(company="\"Пилюлькин и Ко.\"", name = "", number = 14585, productType = {"Медикаменты","средства перевязки"})
 class Medicine extends Product {
 
 	public Medicine(String productName, double price, String productDescription) {
@@ -98,7 +101,7 @@ class Medicine extends Product {
 		this.discountPercent = discountPercent;
 	}
 }
-
+	@ProducerInfo(company="\"\"", name = "", number = 2020317, productType = {"Оружие","боеприпасы"})
 class Weapon extends Product {
 
 	public Weapon(String productName, double price, String productDescription) {
