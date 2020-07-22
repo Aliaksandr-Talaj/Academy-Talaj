@@ -1,8 +1,13 @@
-package by.academy.classwork.lesson6.strings.task15;
+package by.academy.homework2.strings;
 
 import java.util.Scanner;
 
-public class Main {
+/* ”словие здачи: ввести 2 слова,
+ * состо€щие из четного числа букв.
+ * ѕолучить слово состо€щее из первой половины
+ * первого слова и второй половины второго слова.*/
+
+public class Task15 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

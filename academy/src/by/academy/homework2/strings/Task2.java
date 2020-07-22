@@ -1,8 +1,13 @@
-package by.academy.classwork.lesson6.strings.task2;
+package by.academy.homework2.strings;
 
 import java.util.Scanner;
 
-public class Main {
+/* ¬вести n строк с консоли.
+ * ”пор€дочить и вывести строки
+ * в пор€дке возрастани€ (убывани€) 
+ * значений их длины.*/
+
+public class Task2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

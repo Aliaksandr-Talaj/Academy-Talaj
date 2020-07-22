@@ -1,8 +1,11 @@
-package by.academy.classwork.lesson6.strings.task7;
+package by.academy.homework2.strings;
 
 import java.util.Scanner;
 
-public class Main {
+/* Ввести n слов с консоли. Найти слово, состоящее только из различных символов. 
+Если таких слов несколько, найти первое из них. */
+
+public class Task7 {
 
 	public static void main(String[] args) {
 		System.out.println("Введите слова в строку через пробел:");

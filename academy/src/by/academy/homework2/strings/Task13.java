@@ -1,8 +1,12 @@
-package by.academy.classwork.lesson6.strings.task13;
+package by.academy.homework2.strings;
 
 import java.util.Scanner;
 
-public class Main {
+/* Написать программу, позволяющую корректно находить
+ * корни квадратного уравнения.
+ * Параметры уравнения должны задаваться с командной строки.*/
+
+public class Task13 {
 
 	public static void main(String[] args) {
 		System.out.println("Для уравнения вида \"a*x^2+b*x+c=0\"");

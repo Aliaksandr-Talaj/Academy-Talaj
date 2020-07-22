@@ -1,8 +1,12 @@
-package by.academy.classwork.lesson6.strings.task1;
+package by.academy.homework2.strings;
 
 import java.util.Scanner;
 
-public class Main {
+/* Ввести n строк с консоли,
+ * найти самую короткую и самую длинную строки. 
+ * Вывести найденные строки и их длину.*/
+
+public class Task1 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

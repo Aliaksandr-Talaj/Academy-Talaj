@@ -1,8 +1,13 @@
-package by.academy.classwork.lesson6.strings.task3;
+package by.academy.homework2.strings;
 
 import java.util.Scanner;
 
-public class Main {
+/* Ввести n строк с консоли.
+ * Вывести на консоль те строки,
+ * длина которых меньше (больше) 
+ * средней, а также длину.*/
+
+public class Task3 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

@@ -1,8 +1,13 @@
-package by.academy.classwork.lesson6.strings.task5;
+package by.academy.homework2.strings;
 
 import java.util.Scanner;
 
-public class Main {
+/* ¬вести n слов с консоли. Ќайти количество слов,
+   содержащих только символы латинского алфавита,
+   а среди них Ц количество слов с равным числом
+   гласных и согласных букв. */
+
+public class Task5 {
 
 	public static void main(String[] args) {
 		System.out.println("¬ведите слова в строку:");

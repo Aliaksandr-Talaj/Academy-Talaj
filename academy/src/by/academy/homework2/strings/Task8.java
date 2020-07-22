@@ -1,8 +1,12 @@
-package by.academy.classwork.lesson6.strings.task8;
+package by.academy.homework2.strings;
 
 import java.util.Scanner;
 
-public class Main {
+/* Ввести n слов с консоли. Среди слов, состоящих только из цифр,
+ * найти слово-палиндром. Если таких слов больше одного,
+ * найти второе из них.*/
+
+public class Task8 {
 
 	public static void main(String[] args) {
 		System.out.println("Введите слова в строку через пробел:");

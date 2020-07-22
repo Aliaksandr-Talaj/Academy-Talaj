@@ -1,8 +1,13 @@
-package by.academy.classwork.lesson6.strings.task11;
+package by.academy.homework2.strings;
 
 import java.util.Scanner;
 
-public class Main {
+/* »спользу€ оператор switch, написать программу,
+ * котора€ выводит на экран сообщени€ о принадлежности
+ * некоторого значени€ k интервалам
+ * (-10k, 5], [0, 10], [5, 15], [10, 10k].*/
+
+public class Task11 {
 
 	public static void main(String[] args) {
 		System.out.println("¬ведите число k:");
