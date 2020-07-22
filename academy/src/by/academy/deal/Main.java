@@ -1,6 +1,5 @@
 package by.academy.deal;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -8,7 +7,6 @@ public class Main {
 	public static void main(String[] args) {
 
 		Deal deal1 = new Deal();
-		double totalPrice = 0;
 		User sidor = new User("Sidorovich");
 		deal1.setSeller(sidor);
 
@@ -37,50 +35,10 @@ public class Main {
 		String wannaBuy = sc.nextLine();
 		wannaBuy = wannaBuy.toLowerCase();
 		if (wannaBuy.contentEquals("да")) {
-			ArrayList<Product> productsList = new ArrayList<Product>();
-			ArrayList<Integer> quantitiesList = new ArrayList<Integer>();
-			ArrayList<Double> stackPrices = new ArrayList<Double>();
-			boolean buyMore = true;
-			int counter = 0;
-			while (buyMore) {
-				System.out.println("Введите наименование необходимого товара");
-				String good = sc.next();
-				good = good.toLowerCase();
-				for (Product p : Pricelist.getProduct()) {
-					if (p.getProductName().toLowerCase().contentEquals(good)) {
-
-						System.out.println("Введите необходимое количество данного товара");
-						int q = sc.nextInt();
-						productsList.add(counter, p);
-						quantitiesList.add(counter, q);
-						stackPrices.add(counter, q * p.getDiscountPrice());
-						totalPrice += q * p.getDiscountPrice();
-						counter++;
-					}
-				}
-				System.out.println("Желаете совершить ещё покупку? (да/нет)");
-				wannaBuy = sc.next();
-				wannaBuy = wannaBuy.toLowerCase();
-				buyMore = false;
-				if (wannaBuy.contentEquals("да")) {
-					buyMore = true;
-				}
-			}
-			deal1.setDealProduct(productsList.toArray(new Product[productsList.size()]));
-			deal1.setQuantity(quantitiesList.toArray(new Integer[productsList.size()]));
-			deal1.setStackPrice(stackPrices.toArray(new Double[productsList.size()]));
+			deal1.vending();
 		}
-		System.out.println();
-		System.out.println("Продавец: " + deal1.getSeller().getUserName());
-		System.out.println("Покупатель: " + deal1.getBuyer().getUserName());
-		int counter = 0;
-		for (Product p : deal1.getDealProduct()) {
-			System.out.println(p.getProductName() + "\t\t" + deal1.getQuantity()[counter] + " шт.\t\t"
-					+ deal1.getStackPrice()[counter] + " руб.");
-			counter++;
-		}
-		System.out.println("Сумма к оплате: " + totalPrice + " руб.");
-		System.out.println("Срок оплаты - не позднее "+ deal1.getDeadlineDate());
+		System.out.println(deal1.toString());
+		
 		sc.close();
 
 	}

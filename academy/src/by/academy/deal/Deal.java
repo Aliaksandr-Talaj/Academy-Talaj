@@ -1,8 +1,10 @@
 package by.academy.deal;
 
 import java.util.Date;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.Scanner;
 
 public class Deal {
 
@@ -64,7 +66,7 @@ public class Deal {
 	public void setBuyer(User buyer) {
 		this.buyer = buyer;
 	}
-
+		
 	public void setDealProduct(Product[] products) {
 		this.products = products;
 	}
@@ -79,10 +81,6 @@ public class Deal {
 
 	public void setStackPrice(Double[] stackPrice) {
 		this.stackPrice = stackPrice;
-	}
-
-	public void setTotalPrice(double totalPrice) {
-		this.totalPrice = totalPrice;
 	}
 
 	@Override
@@ -105,12 +103,50 @@ public class Deal {
 		}
 
 		builder.append("\n—умма к оплате: ");
-	//	builder.append(Main.totalPrice);
+		builder.append(totalPrice);
 		builder.append(" руб.");
 		builder.append("\n");
 		builder.append("—рок оплаты - не позднее ");
 		builder.append(getDeadlineDate());
 
 		return builder.toString();
+	}
+
+	public void vending() {
+	Scanner sc = new Scanner(System.in);
+	String wannaBuy;
+	ArrayList<Product> productsList = new ArrayList<Product>();
+	ArrayList<Integer> quantitiesList = new ArrayList<Integer>();
+	ArrayList<Double> stackPrices = new ArrayList<Double>();
+	boolean buyMore = true;
+	int counter = 0;
+	while (buyMore) {
+		System.out.println("¬ведите наименование необходимого товара");
+		String good = sc.next();
+		good = good.toLowerCase();
+		for (Product p : Pricelist.getProduct()) {
+			if (p.getProductName().toLowerCase().contentEquals(good)) {
+
+				System.out.println("¬ведите необходимое количество данного товара");
+				int q = sc.nextInt();
+				productsList.add(counter, p);
+				quantitiesList.add(counter, q);
+				stackPrices.add(counter, q * p.getDiscountPrice());
+				totalPrice += q * p.getDiscountPrice();
+				counter++;
+			}
+		}
+		System.out.println("∆елаете совершить ещЄ покупку? (да/нет)");
+		wannaBuy = sc.next();
+		wannaBuy = wannaBuy.toLowerCase();
+		buyMore = false;
+		if (wannaBuy.contentEquals("да")) {
+			buyMore = true;
+		}
+	}
+	setDealProduct(productsList.toArray(new Product[productsList.size()]));
+	setQuantity(quantitiesList.toArray(new Integer[productsList.size()]));
+	setStackPrice(stackPrices.toArray(new Double[productsList.size()]));
+	sc.close();
 	}
 }
