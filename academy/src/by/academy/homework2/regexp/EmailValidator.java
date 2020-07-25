@@ -8,15 +8,15 @@ public class EmailValidator implements Validator {
 	private static Pattern pattern = Pattern.compile("(\\w[\\w\\.\\_\\-]{2,})@(\\w+\\.)([a-z]{2,4})");
 
 	public static void main(String[] args) {
-		System.out.println("Введите email");
+		System.out.println("Р’РІРµРґРёС‚Рµ email");
 		Scanner sc = new Scanner(System.in);
 		String test = sc.nextLine();
 		sc.close();
 		Validator emailVal = new EmailValidator();
 		if (emailVal.validate(test)) {
-			System.out.println("Email соответствует формату");
+			System.out.println("Email СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ С„РѕСЂРјР°С‚Сѓ");
 		} else {
-			System.out.println("Email не соответствует формату");
+			System.out.println("Email РЅРµ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ С„РѕСЂРјР°С‚Сѓ");
 		}
 	}
 

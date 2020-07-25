@@ -10,15 +10,15 @@ public class AmericanPhoneValidator implements Validator {
 			.compile("\\+?1\\s*\\W?\\s*([2-9][0-8][0-9])\\s*\\W?\\s*([2-9][0-9]{2})\\s*\\W?\\s*([0-9]{4})");
 
 	public static void main(String[] args) {
-		System.out.println("Введите номер телефона");
+		System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°");
 		Scanner sc = new Scanner(System.in);
 		String test = sc.nextLine();
 		sc.close();
 		Validator phoneVal = new AmericanPhoneValidator();
 		if (phoneVal.validate(test)) {
-			System.out.println("Номер соответствует формату");
+			System.out.println("РќРѕРјРµСЂ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ С„РѕСЂРјР°С‚Сѓ");
 		} else {
-			System.out.println("Номер не соответствует формату");
+			System.out.println("РќРѕРјРµСЂ РЅРµ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ С„РѕСЂРјР°С‚Сѓ");
 		}
 	}
 

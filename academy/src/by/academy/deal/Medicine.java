@@ -1,6 +1,7 @@
 package by.academy.deal;
 
-@ProducerInfo(company="\"Пилюлькин и Ко.\"", name = "", number = 14585, productType = {"Медикаменты","средства перевязки"})
+@ProducerInfo(company = "\"РџРёР»СЋР»СЊРєРёРЅ Рё РљРѕ.\"", name = "", number = 14585, productType = { "РњРµРґРёРєР°РјРµРЅС‚С‹",
+		"СЃСЂРµРґСЃС‚РІР° РїРµСЂРµРІСЏР·РєРё" })
 class Medicine extends Product {
 
 	public Medicine(String productName, double price, String productDescription) {

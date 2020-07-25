@@ -5,12 +5,12 @@ public class Dog extends Animal {
 
 	@Override
 	public void makeNoise() {
-		System.out.println("Собака лает");
+		System.out.println("РЎРѕР±Р°РєР° Р»Р°РµС‚");
 	}
 
 	@Override
 	public void eat() {
-		System.out.println("Собака ест");
+		System.out.println("РЎРѕР±Р°РєР° РµСЃС‚");
 	}
 
 }

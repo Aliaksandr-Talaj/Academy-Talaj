@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Task3 {
 	public static void main(String[] args) {
-		System.out.println("Введите строку:");
+		System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ:");
 		Scanner sc = new Scanner(System.in);
 		String string = new String();
 		string = sc.nextLine();

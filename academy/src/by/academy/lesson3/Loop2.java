@@ -11,6 +11,6 @@ public class Loop2 {
 		for (int i=1;i<=n;i++) {
 			sum+=i;
 		}
-		System.out.println ("ñóììà ÷èñåë îò 1 äî "+n+" ðàâíà "+sum);
+		System.out.println ("ÑÑƒÐ¼Ð¼Ð° Ñ‡Ð¸ÑÐµÐ» Ð¾Ñ‚ 1 Ð´Ð¾ "+n+" Ñ€Ð°Ð²Ð½Ð° "+sum);
 	}
 }

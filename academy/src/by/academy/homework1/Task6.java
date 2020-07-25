@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Task6 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Введите первую строку");
+		System.out.println("Р’РІРµРґРёС‚Рµ РїРµСЂРІСѓСЋ СЃС‚СЂРѕРєСѓ");
 		String str1 = sc.nextLine();
-		System.out.println("введите вторую строку");
+		System.out.println("РІРІРµРґРёС‚Рµ РІС‚РѕСЂСѓСЋ СЃС‚СЂРѕРєСѓ");
 		String str2 = sc.nextLine();
 		sc.close();
 		int matchCount = 0;

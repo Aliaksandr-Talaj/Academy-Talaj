@@ -2,35 +2,35 @@ package by.academy.homework2.strings;
 
 import java.util.Scanner;
 
-/* Используя оператор switch, написать программу,
- * которая выводит на экран сообщения о принадлежности
- * некоторого значения k интервалам
+/* РСЃРїРѕР»СЊР·СѓСЏ РѕРїРµСЂР°С‚РѕСЂ switch, РЅР°РїРёСЃР°С‚СЊ РїСЂРѕРіСЂР°РјРјСѓ,
+ * РєРѕС‚РѕСЂР°СЏ РІС‹РІРѕРґРёС‚ РЅР° СЌРєСЂР°РЅ СЃРѕРѕР±С‰РµРЅРёСЏ Рѕ РїСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚Рё
+ * РЅРµРєРѕС‚РѕСЂРѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ k РёРЅС‚РµСЂРІР°Р»Р°Рј
  * (-10k, 0], (0, 5], (5, 10], (10, 10k].*/
 
 public class Task10 {
 
 	public static void main(String[] args) {
-		System.out.println("Введите число k:");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ k:");
 		Scanner sc = new Scanner(System.in);
 		double k = sc.nextDouble();
 		sc.close();
 		switch ((int) Math.ceil(k / 5)) {
 		case 1:
-			System.out.println("Входит в интервал (0, 5]");
+			System.out.println("Р’С…РѕРґРёС‚ РІ РёРЅС‚РµСЂРІР°Р» (0, 5]");
 			break;
 		case 2:
-			System.out.println("Входит в интервал (5, 10]");
+			System.out.println("Р’С…РѕРґРёС‚ РІ РёРЅС‚РµСЂРІР°Р» (5, 10]");
 			break;
 		default:
 			switch ((int) Math.ceil(k / 10)) {
 			case 0:
-				System.out.println("Входит в интервал (-10k,0]");
+				System.out.println("Р’С…РѕРґРёС‚ РІ РёРЅС‚РµСЂРІР°Р» (-10k,0]");
 				break;
 			case 2:
-				System.out.println("Входит в интервал (10, 10k]");
+				System.out.println("Р’С…РѕРґРёС‚ РІ РёРЅС‚РµСЂРІР°Р» (10, 10k]");
 				break;
 			default:
-				System.out.println("Не входит ни в один из интервалов");
+				System.out.println("РќРµ РІС…РѕРґРёС‚ РЅРё РІ РѕРґРёРЅ РёР· РёРЅС‚РµСЂРІР°Р»РѕРІ");
 			}
 		}
 	}

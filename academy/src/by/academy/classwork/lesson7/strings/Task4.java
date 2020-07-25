@@ -10,17 +10,17 @@ public class Task4 {
 		for (int i = 0; i < 100_000_000; i++) {
 			sbl = sbl.append("a");
 		}
-		System.out.println("Âðåìÿ âûïîëíåíèÿ StringBuilder, ìñ: " + (System.currentTimeMillis() - start));
+		System.out.println("Ð’Ñ€ÐµÐ¼Ñ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ StringBuilder, Ð¼Ñ: " + (System.currentTimeMillis() - start));
 		start = System.currentTimeMillis();
 		for (int i = 0; i < 100_000_000; i++) {
 			sbf = sbf.append("a");
 		}
-		System.out.println("Âðåìÿ âûïîëíåíèÿ StringBuffer, ìñ: " + (System.currentTimeMillis() - start));
+		System.out.println("Ð’Ñ€ÐµÐ¼Ñ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ StringBuffer, Ð¼Ñ: " + (System.currentTimeMillis() - start));
 
 		start = System.currentTimeMillis();
 		for (int i = 0; i < 100_000; i++) {
 			str = str.concat("a");
 		}
-		System.out.println("Âðåìÿ âûïîëíåíèÿ String, ìñ: " + (System.currentTimeMillis() - start));
+		System.out.println("Ð’Ñ€ÐµÐ¼Ñ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ String, Ð¼Ñ: " + (System.currentTimeMillis() - start));
 	}
 }

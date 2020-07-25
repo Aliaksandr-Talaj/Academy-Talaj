@@ -1,15 +1,15 @@
 package by.academy.homework2.strings;
 
-/* Написать программу, которая выводит числа
- * от 1 до 25 в виде матрицы 5x5
- * слева направо и сверху вниз.*/
+/* РќР°РїРёСЃР°С‚СЊ РїСЂРѕРіСЂР°РјРјСѓ, РєРѕС‚РѕСЂР°СЏ РІС‹РІРѕРґРёС‚ С‡РёСЃР»Р°
+ * РѕС‚ 1 РґРѕ 25 РІ РІРёРґРµ РјР°С‚СЂРёС†С‹ 5x5
+ * СЃР»РµРІР° РЅР°РїСЂР°РІРѕ Рё СЃРІРµСЂС…Сѓ РІРЅРёР·.*/
 
 public class Task12 {
 
 	public static void main(String[] args) {
-		int x=1;
-		for (int i=0; i<5;i++) {
-			for(int j=0;j<5;j++) {
+		int x = 1;
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
 				System.out.printf(" %2d", x++);
 			}
 			System.out.println();

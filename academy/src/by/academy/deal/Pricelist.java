@@ -2,18 +2,18 @@ package by.academy.deal;
 
 public final class Pricelist {
 
-	public static Food 		kolbasa = 	new Food	("Колбаса", 70, "Не хреновая", 4);
-	public static Food 		baton = 	new Food	("Батон", 10, "Не хреновый", 5);
-	public static Food 		vodka = 	new Food	("Водка", 40, "Противопоказанно беременным детям", 3);
-	public static Food 		tushenka = 	new Food	("Тушенка", 40, "\"Завтрак туриста\" грамм на 250, не 300", 5);
-	public static Food 		energetik = new Food	("Энергетик", 50,
-			"Добавь ещё деньжат и сможешь нанять настоящего инженера-энергетика", 2);
-	public static Medicine 	bint = 		new Medicine("Бинт", 80, "\"Рамзес\", стерильный ", 7);
-	public static Medicine 	aptechka = 	new Medicine("Аптечка", 250,
-			"Коробочка с крестиком, спасающая от коробочки под крестиком", 8);
-	public static Medicine 	antirad = 	new Medicine("Антирад", 300, "Кто водку пить не рад, тот купит антирад", 12);
-	public static Weapon 	obrez = 	new Weapon	("Обрез", 400, "Вместо тысячи слов", 4);
-	public static Weapon 	drob = 		new Weapon	("Патроны", 10, "Пятёрка - на уток...", 5);
+	public static Food 		kolbasa = 	new Food	("РљРѕР»Р±Р°СЃР°", 70, "РќРµ С…СЂРµРЅРѕРІР°СЏ", 4);
+	public static Food 		baton = 	new Food	("Р‘Р°С‚РѕРЅ", 10, "РќРµ С…СЂРµРЅРѕРІС‹Р№", 5);
+	public static Food 		vodka = 	new Food	("Р’РѕРґРєР°", 40, "РџСЂРѕС‚РёРІРѕРїРѕРєР°Р·Р°РЅРЅРѕ Р±РµСЂРµРјРµРЅРЅС‹Рј РґРµС‚СЏРј", 3);
+	public static Food 		tushenka = 	new Food	("РўСѓС€РµРЅРєР°", 40, "\"Р—Р°РІС‚СЂР°Рє С‚СѓСЂРёСЃС‚Р°\" РіСЂР°РјРј РЅР° 250, РЅРµ 300", 5);
+	public static Food 		energetik = new Food	("Р­РЅРµСЂРіРµС‚РёРє", 50,
+			"Р”РѕР±Р°РІСЊ РµС‰С‘ РґРµРЅСЊР¶Р°С‚ Рё СЃРјРѕР¶РµС€СЊ РЅР°РЅСЏС‚СЊ РЅР°СЃС‚РѕСЏС‰РµРіРѕ РёРЅР¶РµРЅРµСЂР°-СЌРЅРµСЂРіРµС‚РёРєР°", 2);
+	public static Medicine 	bint = 		new Medicine("Р‘РёРЅС‚", 80, "\"Р Р°РјР·РµСЃ\", СЃС‚РµСЂРёР»СЊРЅС‹Р№ ", 7);
+	public static Medicine 	aptechka = 	new Medicine("РђРїС‚РµС‡РєР°", 250,
+			"РљРѕСЂРѕР±РѕС‡РєР° СЃ РєСЂРµСЃС‚РёРєРѕРј, СЃРїР°СЃР°СЋС‰Р°СЏ РѕС‚ РєРѕСЂРѕР±РѕС‡РєРё РїРѕРґ РєСЂРµСЃС‚РёРєРѕРј", 8);
+	public static Medicine 	antirad = 	new Medicine("РђРЅС‚РёСЂР°Рґ", 300, "РљС‚Рѕ РІРѕРґРєСѓ РїРёС‚СЊ РЅРµ СЂР°Рґ, С‚РѕС‚ РєСѓРїРёС‚ Р°РЅС‚РёСЂР°Рґ", 12);
+	public static Weapon 	obrez = 	new Weapon	("РћР±СЂРµР·", 400, "Р’РјРµСЃС‚Рѕ С‚С‹СЃСЏС‡Рё СЃР»РѕРІ", 4);
+	public static Weapon 	drob = 		new Weapon	("РџР°С‚СЂРѕРЅС‹", 10, "РџСЏС‚С‘СЂРєР° - РЅР° СѓС‚РѕРє...", 5);
 
 	private static Product[] pricelist = { kolbasa, baton, vodka, tushenka, energetik, bint, aptechka, antirad, obrez,
 			drob };
@@ -23,8 +23,8 @@ public final class Pricelist {
 	}
 
 	public static void print() {
-		System.out.println("Список товаров:\n");
-		System.out.println("Наименование\t\t\tЦена, руб\tСкидка, %\tОписание товара");
+		System.out.println("РЎРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ:\n");
+		System.out.println("РќР°РёРјРµРЅРѕРІР°РЅРёРµ\t\t\tР¦РµРЅР°, СЂСѓР±\tРЎРєРёРґРєР°, %\tРћРїРёСЃР°РЅРёРµ С‚РѕРІР°СЂР°");
 
 		for (Product p : Pricelist.getProduct()) {
 			System.out.print("\n" + p.getProductName() + "\t\t\t");

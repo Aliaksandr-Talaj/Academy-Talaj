@@ -11,6 +11,6 @@ public class Loop3 {
 		for (int i=1;i<=n;i++) {
 			mul*=i;
 		}
-		System.out.println ("произведение чисел от 1 до "+n+" равно "+mul);
+		System.out.println ("РїСЂРѕРёР·РІРµРґРµРЅРёРµ С‡РёСЃРµР» РѕС‚ 1 РґРѕ "+n+" СЂР°РІРЅРѕ "+mul);
 	}
 }

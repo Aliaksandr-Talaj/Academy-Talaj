@@ -6,14 +6,14 @@ public class Animal {
 	String location;
 
 	public void makeNoise() {
-		System.out.println("Животное шумит");
+		System.out.println("Р–РёРІРѕС‚РЅРѕРµ С€СѓРјРёС‚");
 	}
 
 	public void eat() {
-		System.out.println("Животное ест");
+		System.out.println("Р–РёРІРѕС‚РЅРѕРµ РµСЃС‚");
 	}
 
 	public void sleep() {
-		System.out.println("Животное спит");
+		System.out.println("Р–РёРІРѕС‚РЅРѕРµ СЃРїРёС‚");
 	}
 }

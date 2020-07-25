@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class Task1 {
 
 	public static void main(String[] args) {
-		System.out.println("Введите строку:");
+		System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ:");
 		Scanner sc = new Scanner(System.in);
 		String string = new String();
 		string = sc.nextLine();
@@ -19,8 +19,8 @@ public class Task1 {
 		while (matcher.find()) {
 			counter++;
 		}
-		System.out.println("Количество знаков препинания: " + counter);
-		System.out.println("Время выполнения, мс: " + (System.currentTimeMillis() - start));
+		System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ Р·РЅР°РєРѕРІ РїСЂРµРїРёРЅР°РЅРёСЏ: " + counter);
+		System.out.println("Р’СЂРµРјСЏ РІС‹РїРѕР»РЅРµРЅРёСЏ, РјСЃ: " + (System.currentTimeMillis() - start));
 	}
 
 }

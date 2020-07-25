@@ -2,9 +2,9 @@ package by.academy.homework2.strings;
 
 import java.util.Scanner;
 
-/* Ввести число от 1 до 12. Вывести на консоль название месяца,
- * соответствующего данному числу.
- * (Осуществить проверку корректности ввода чисел).*/
+/* Р’РІРµСЃС‚Рё С‡РёСЃР»Рѕ РѕС‚ 1 РґРѕ 12. Р’С‹РІРµСЃС‚Рё РЅР° РєРѕРЅСЃРѕР»СЊ РЅР°Р·РІР°РЅРёРµ РјРµСЃСЏС†Р°,
+ * СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РµРіРѕ РґР°РЅРЅРѕРјСѓ С‡РёСЃР»Сѓ.
+ * (РћСЃСѓС‰РµСЃС‚РІРёС‚СЊ РїСЂРѕРІРµСЂРєСѓ РєРѕСЂСЂРµРєС‚РЅРѕСЃС‚Рё РІРІРѕРґР° С‡РёСЃРµР»).*/
 
 public class Task14 {
 
@@ -12,59 +12,59 @@ public class Task14 {
 		Scanner sc = new Scanner(System.in);
 		boolean repeat = false;
 		do {
-			System.out.println("Введите число от 1 до 12:");
+			System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ РѕС‚ 1 РґРѕ 12:");
 			int i = sc.nextInt();
 			switch (i) {
 			case 1:
-				System.out.println("Данному числу соответствует январь");
+				System.out.println("Р”Р°РЅРЅРѕРјСѓ С‡РёСЃР»Сѓ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ СЏРЅРІР°СЂСЊ");
 				repeat = false;
 				break;
 			case 2:
-				System.out.println("Данному числу соответствует февраль");
+				System.out.println("Р”Р°РЅРЅРѕРјСѓ С‡РёСЃР»Сѓ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ С„РµРІСЂР°Р»СЊ");
 				repeat = false;
 				break;
 			case 3:
-				System.out.println("Данному числу соответствует март");
+				System.out.println("Р”Р°РЅРЅРѕРјСѓ С‡РёСЃР»Сѓ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РјР°СЂС‚");
 				repeat = false;
 				break;
 			case 4:
-				System.out.println("Данному числу соответствует апрель");
+				System.out.println("Р”Р°РЅРЅРѕРјСѓ С‡РёСЃР»Сѓ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ Р°РїСЂРµР»СЊ");
 				repeat = false;
 				break;
 			case 5:
-				System.out.println("Данному числу соответствует май");
+				System.out.println("Р”Р°РЅРЅРѕРјСѓ С‡РёСЃР»Сѓ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РјР°Р№");
 				repeat = false;
 				break;
 			case 6:
-				System.out.println("Данному числу соответствует июнь");
+				System.out.println("Р”Р°РЅРЅРѕРјСѓ С‡РёСЃР»Сѓ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РёСЋРЅСЊ");
 				repeat = false;
 				break;
 			case 7:
-				System.out.println("Данному числу соответствует июль");
+				System.out.println("Р”Р°РЅРЅРѕРјСѓ С‡РёСЃР»Сѓ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РёСЋР»СЊ");
 				repeat = false;
 				break;
 			case 8:
-				System.out.println("Данному числу соответствует август");
+				System.out.println("Р”Р°РЅРЅРѕРјСѓ С‡РёСЃР»Сѓ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ Р°РІРіСѓСЃС‚");
 				repeat = false;
 				break;
 			case 9:
-				System.out.println("Данному числу соответствует сентябрь");
+				System.out.println("Р”Р°РЅРЅРѕРјСѓ С‡РёСЃР»Сѓ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ СЃРµРЅС‚СЏР±СЂСЊ");
 				repeat = false;
 				break;
 			case 10:
-				System.out.println("Данному числу соответствует октябрь");
+				System.out.println("Р”Р°РЅРЅРѕРјСѓ С‡РёСЃР»Сѓ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РѕРєС‚СЏР±СЂСЊ");
 				repeat = false;
 				break;
 			case 11:
-				System.out.println("Данному числу соответствует ноябрь");
+				System.out.println("Р”Р°РЅРЅРѕРјСѓ С‡РёСЃР»Сѓ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РЅРѕСЏР±СЂСЊ");
 				repeat = false;
 				break;
 			case 12:
-				System.out.println("Данному числу соответствует декабрь");
+				System.out.println("Р”Р°РЅРЅРѕРјСѓ С‡РёСЃР»Сѓ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РґРµРєР°Р±СЂСЊ");
 				repeat = false;
 				break;
 			default:
-				System.out.println("вы ввели неверное число");
+				System.out.println("РІС‹ РІРІРµР»Рё РЅРµРІРµСЂРЅРѕРµ С‡РёСЃР»Рѕ");
 				repeat = true;
 			}
 		} while (repeat);

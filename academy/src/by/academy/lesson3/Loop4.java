@@ -19,8 +19,8 @@ public class Loop4 {
 				}
 		}
 		sc.close();
-		System.out.println ("количество положительных - "+pos);
-		System.out.println ("количество отрицательных - "+neg);
-		System.out.println ("количество нулей - "+zero);
+		System.out.println ("РєРѕР»РёС‡РµСЃС‚РІРѕ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹С… - "+pos);
+		System.out.println ("РєРѕР»РёС‡РµСЃС‚РІРѕ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹С… - "+neg);
+		System.out.println ("РєРѕР»РёС‡РµСЃС‚РІРѕ РЅСѓР»РµР№ - "+zero);
 	}
 }

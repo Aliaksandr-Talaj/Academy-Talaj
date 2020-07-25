@@ -8,15 +8,15 @@ public class Main {
 		Cat cat = new Cat();
 		Horse horse = new Horse();
 
-		dog.name = "Шарик";
-		dog.food = "Зайчатина";
-		dog.location = "Простоквашино";
-		cat.name = "Матроскин";
-		cat.food = "Молоко";
-		cat.location = "Простоквашино";
-		horse.name = "Росинант";
-		horse.food = "Травка";
-		horse.location = "Голландия";
+		dog.name = "РЁР°СЂРёРє";
+		dog.food = "Р—Р°Р№С‡Р°С‚РёРЅР°";
+		dog.location = "РџСЂРѕСЃС‚РѕРєРІР°С€РёРЅРѕ";
+		cat.name = "РњР°С‚СЂРѕСЃРєРёРЅ";
+		cat.food = "РњРѕР»РѕРєРѕ";
+		cat.location = "РџСЂРѕСЃС‚РѕРєРІР°С€РёРЅРѕ";
+		horse.name = "Р РѕСЃРёРЅР°РЅС‚";
+		horse.food = "РўСЂР°РІРєР°";
+		horse.location = "Р“РѕР»Р»Р°РЅРґРёСЏ";
 
 		Animal[] animals = { dog, cat, horse };
 		for (int i = 0; i < animals.length; i++) {

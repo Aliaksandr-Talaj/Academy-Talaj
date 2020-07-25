@@ -2,14 +2,14 @@ package by.academy.homework2.strings;
 
 import java.util.Scanner;
 
-/* Ввести n слов с консоли. Среди слов, состоящих только из цифр,
- * найти слово-палиндром. Если таких слов больше одного,
- * найти второе из них.*/
+/* Р’РІРµСЃС‚Рё n СЃР»РѕРІ СЃ РєРѕРЅСЃРѕР»Рё. РЎСЂРµРґРё СЃР»РѕРІ, СЃРѕСЃС‚РѕСЏС‰РёС… С‚РѕР»СЊРєРѕ РёР· С†РёС„СЂ,
+ * РЅР°Р№С‚Рё СЃР»РѕРІРѕ-РїР°Р»РёРЅРґСЂРѕРј. Р•СЃР»Рё С‚Р°РєРёС… СЃР»РѕРІ Р±РѕР»СЊС€Рµ РѕРґРЅРѕРіРѕ,
+ * РЅР°Р№С‚Рё РІС‚РѕСЂРѕРµ РёР· РЅРёС….*/
 
 public class Task8 {
 
 	public static void main(String[] args) {
-		System.out.println("Введите слова в строку через пробел:");
+		System.out.println("Р’РІРµРґРёС‚Рµ СЃР»РѕРІР° РІ СЃС‚СЂРѕРєСѓ С‡РµСЂРµР· РїСЂРѕР±РµР»:");
 		Scanner sc = new Scanner(System.in);
 		String string = new String();
 		string = sc.nextLine();
@@ -30,13 +30,13 @@ public class Task8 {
 			}
 		}
 		if (digitalPalindrome.isEmpty()) {
-			System.out.println("Нет чисел-палиндромов");
+			System.out.println("РќРµС‚ С‡РёСЃРµР»-РїР°Р»РёРЅРґСЂРѕРјРѕРІ");
 		} else {
 			String[] palindroms = digitalPalindrome.split(" +");
 			if (palindroms.length == 1) {
-				System.out.println("Единственное число-палиндром - " + palindroms[0]);
+				System.out.println("Р•РґРёРЅСЃС‚РІРµРЅРЅРѕРµ С‡РёСЃР»Рѕ-РїР°Р»РёРЅРґСЂРѕРј - " + palindroms[0]);
 			} else {
-				System.out.println("Второе число-палиндром - " + palindroms[1]);
+				System.out.println("Р’С‚РѕСЂРѕРµ С‡РёСЃР»Рѕ-РїР°Р»РёРЅРґСЂРѕРј - " + palindroms[1]);
 			}
 		}
 	}

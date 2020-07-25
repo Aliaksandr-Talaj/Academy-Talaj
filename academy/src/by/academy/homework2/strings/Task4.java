@@ -2,19 +2,19 @@ package by.academy.homework2.strings;
 
 import java.util.Scanner;
 
-/* Ввести n слов с консоли. Найти слово, в котором число различных символов минимально. 
-Если таких слов несколько, найти первое из них. */
+/* Р’РІРµСЃС‚Рё n СЃР»РѕРІ СЃ РєРѕРЅСЃРѕР»Рё. РќР°Р№С‚Рё СЃР»РѕРІРѕ, РІ РєРѕС‚РѕСЂРѕРј С‡РёСЃР»Рѕ СЂР°Р·Р»РёС‡РЅС‹С… СЃРёРјРІРѕР»РѕРІ РјРёРЅРёРјР°Р»СЊРЅРѕ. 
+Р•СЃР»Рё С‚Р°РєРёС… СЃР»РѕРІ РЅРµСЃРєРѕР»СЊРєРѕ, РЅР°Р№С‚Рё РїРµСЂРІРѕРµ РёР· РЅРёС…. */
 
 public class Task4 {
 	public static void main(String[] args) {
-		System.out.println("Введите слова в строку через пробел:");
+		System.out.println("Р’РІРµРґРёС‚Рµ СЃР»РѕРІР° РІ СЃС‚СЂРѕРєСѓ С‡РµСЂРµР· РїСЂРѕР±РµР»:");
 		Scanner sc = new Scanner(System.in);
 		String string = new String();
 		string = sc.nextLine();
 		sc.close();
 		String[] words = string.split(" +");
 		if (words.length <= 1) {
-			System.out.println("Cлово, в котором число различных" + " символов минимально: " + string);
+			System.out.println("CР»РѕРІРѕ, РІ РєРѕС‚РѕСЂРѕРј С‡РёСЃР»Рѕ СЂР°Р·Р»РёС‡РЅС‹С…" + " СЃРёРјРІРѕР»РѕРІ РјРёРЅРёРјР°Р»СЊРЅРѕ: " + string);
 		} else {
 			int[] unics = new int[words.length];
 			for (int i = 0; i < words.length; i++) {
@@ -33,7 +33,7 @@ public class Task4 {
 			}
 			for (int i = 0; i < unics.length; i++) {
 				if (unics[i] == unicsMin) {
-					System.out.println("Cлово, в котором число различных" + " символов минимально: " + words[i]);
+					System.out.println("CР»РѕРІРѕ, РІ РєРѕС‚РѕСЂРѕРј С‡РёСЃР»Рѕ СЂР°Р·Р»РёС‡РЅС‹С…" + " СЃРёРјРІРѕР»РѕРІ РјРёРЅРёРјР°Р»СЊРЅРѕ: " + words[i]);
 					break;
 				}
 			}

@@ -1,6 +1,6 @@
 package by.academy.deal;
 
-@ProducerInfo(company="\"\"", name = "", number = 2020317, productType = {"Оружие","боеприпасы"})
+@ProducerInfo(company = "\"\"", name = "", number = 2020317, productType = { "РћСЂСѓР¶РёРµ", "Р±РѕРµРїСЂРёРїР°СЃС‹" })
 class Weapon extends Product {
 
 	public Weapon(String productName, double price, String productDescription) {

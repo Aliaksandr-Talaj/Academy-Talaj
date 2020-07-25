@@ -11,28 +11,28 @@ public class Car {
 	protected Engine carEngine;
 
 	public void start() {
-		System.out.println("Поехали");
+		System.out.println("РџРѕРµС…Р°Р»Рё");
 	}
 
 	public void stop() {
-		System.out.println("Останавливаемся");
+		System.out.println("РћСЃС‚Р°РЅР°РІР»РёРІР°РµРјСЃСЏ");
 	}
 
 	public void turnRight() {
-		System.out.println("Поворот направо");
+		System.out.println("РџРѕРІРѕСЂРѕС‚ РЅР°РїСЂР°РІРѕ");
 	}
 
 	public void turnLeft() {
-		System.out.println("Поворот налево");
+		System.out.println("РџРѕРІРѕСЂРѕС‚ РЅР°Р»РµРІРѕ");
 	}
 
 	public void printInfo() {
-		System.out.println("Марка автомобиля: " + carBrand);
-		System.out.println("Класс автомобиля: " + carClass);
-		System.out.println("Вес автомобиля, кг: " + carWeight);
-		System.out.println("Водитель: " + carDriver.getFullName());
-		System.out.println("Стаж вождения: " + carDriver.getDrivingExperience());
-		System.out.println("Мощность двигателя: " + carEngine.getEnginePower());
-		System.out.println("Произодитель двигателя: " + carEngine.getEngineProducer());
+		System.out.println("РњР°СЂРєР° Р°РІС‚РѕРјРѕР±РёР»СЏ: " + carBrand);
+		System.out.println("РљР»Р°СЃСЃ Р°РІС‚РѕРјРѕР±РёР»СЏ: " + carClass);
+		System.out.println("Р’РµСЃ Р°РІС‚РѕРјРѕР±РёР»СЏ, РєРі: " + carWeight);
+		System.out.println("Р’РѕРґРёС‚РµР»СЊ: " + carDriver.getFullName());
+		System.out.println("РЎС‚Р°Р¶ РІРѕР¶РґРµРЅРёСЏ: " + carDriver.getDrivingExperience());
+		System.out.println("РњРѕС‰РЅРѕСЃС‚СЊ РґРІРёРіР°С‚РµР»СЏ: " + carEngine.getEnginePower());
+		System.out.println("РџСЂРѕРёР·РѕРґРёС‚РµР»СЊ РґРІРёРіР°С‚РµР»СЏ: " + carEngine.getEngineProducer());
 	}
 }

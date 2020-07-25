@@ -2,20 +2,20 @@ package by.academy.homework2.strings;
 
 import java.util.Scanner;
 
-/* Ввести n строк с консоли.
- * Упорядочить и вывести строки
- * в порядке возрастания (убывания) 
- * значений их длины.*/
+/* Р’РІРµСЃС‚Рё n СЃС‚СЂРѕРє СЃ РєРѕРЅСЃРѕР»Рё.
+ * РЈРїРѕСЂСЏРґРѕС‡РёС‚СЊ Рё РІС‹РІРµСЃС‚Рё СЃС‚СЂРѕРєРё
+ * РІ РїРѕСЂСЏРґРєРµ РІРѕР·СЂР°СЃС‚Р°РЅРёСЏ (СѓР±С‹РІР°РЅРёСЏ) 
+ * Р·РЅР°С‡РµРЅРёР№ РёС… РґР»РёРЅС‹.*/
 
 public class Task2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Количество строк: ");
+		System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂРѕРє: ");
 		int n = sc.nextInt();
 		String[] strings = new String[n];
 		for (int i = 0; i < n; i++) {
-			System.out.println("строка №" + (i + 1));
+			System.out.println("СЃС‚СЂРѕРєР° в„–" + (i + 1));
 			strings[i] = sc.next();
 		}
 		sc.close();

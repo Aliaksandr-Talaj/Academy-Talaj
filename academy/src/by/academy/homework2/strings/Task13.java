@@ -2,20 +2,20 @@ package by.academy.homework2.strings;
 
 import java.util.Scanner;
 
-/* Написать программу, позволяющую корректно находить
- * корни квадратного уравнения.
- * Параметры уравнения должны задаваться с командной строки.*/
+/* РќР°РїРёСЃР°С‚СЊ РїСЂРѕРіСЂР°РјРјСѓ, РїРѕР·РІРѕР»СЏСЋС‰СѓСЋ РєРѕСЂСЂРµРєС‚РЅРѕ РЅР°С…РѕРґРёС‚СЊ
+ * РєРѕСЂРЅРё РєРІР°РґСЂР°С‚РЅРѕРіРѕ СѓСЂР°РІРЅРµРЅРёСЏ.
+ * РџР°СЂР°РјРµС‚СЂС‹ СѓСЂР°РІРЅРµРЅРёСЏ РґРѕР»Р¶РЅС‹ Р·Р°РґР°РІР°С‚СЊСЃСЏ СЃ РєРѕРјР°РЅРґРЅРѕР№ СЃС‚СЂРѕРєРё.*/
 
 public class Task13 {
 
 	public static void main(String[] args) {
-		System.out.println("Для уравнения вида \"a*x^2+b*x+c=0\"");
-		System.out.println("введите a:");
+		System.out.println("Р”Р»СЏ СѓСЂР°РІРЅРµРЅРёСЏ РІРёРґР° \"a*x^2+b*x+c=0\"");
+		System.out.println("РІРІРµРґРёС‚Рµ a:");
 		Scanner sc = new Scanner(System.in);
 		double a = sc.nextDouble();
-		System.out.println("введите b:");
+		System.out.println("РІРІРµРґРёС‚Рµ b:");
 		double b = sc.nextDouble();
-		System.out.println("введите c:");
+		System.out.println("РІРІРµРґРёС‚Рµ c:");
 		double c = sc.nextDouble();
 		sc.close();
 		if (a == 0) {
@@ -23,7 +23,7 @@ public class Task13 {
 		} else {
 			double d = Math.pow(b, 2) - 4 * a * c;
 			if (d < 0) {
-				System.out.println("Уравнение не имеет корней");
+				System.out.println("РЈСЂР°РІРЅРµРЅРёРµ РЅРµ РёРјРµРµС‚ РєРѕСЂРЅРµР№");
 			} else if (d == 0) {
 				System.out.println((-1 * b) / (2 * a));
 			} else {

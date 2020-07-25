@@ -94,16 +94,16 @@ public class Deal {
 
 		StringBuilder builder = new StringBuilder();
 
-		builder.append("СЧЕТ");
-		builder.append("\nПродавец: " + getSeller().getUserName());
-		builder.append("\nТелефон: " + getSeller().getTelNumber());
+		builder.append("РЎР§Р•Рў");
+		builder.append("\nРџСЂРѕРґР°РІРµС†: " + getSeller().getUserName());
+		builder.append("\nРўРµР»РµС„РѕРЅ: " + getSeller().getTelNumber());
 		builder.append("\nEmail: " + getSeller().getEmail() + "\n");
-		builder.append("\nПокупатель: " + getBuyer().getUserName());
-		builder.append("\nТелефон: " + getBuyer().getTelNumber());
+		builder.append("\nРџРѕРєСѓРїР°С‚РµР»СЊ: " + getBuyer().getUserName());
+		builder.append("\nРўРµР»РµС„РѕРЅ: " + getBuyer().getTelNumber());
 		builder.append("\nEmail: " + getBuyer().getEmail() + "\n");
 		int counter = 0;
 		builder.append("_______________________________________________________");
-		builder.append("\nНаименование\t|Количество\t|Сумма по данной позиции");
+		builder.append("\nРќР°РёРјРµРЅРѕРІР°РЅРёРµ\t|РљРѕР»РёС‡РµСЃС‚РІРѕ\t|РЎСѓРјРјР° РїРѕ РґР°РЅРЅРѕР№ РїРѕР·РёС†РёРё");
 		builder.append("\n-------------------------------------------------------");
 		for (Product p : getDealProduct()) {
 			builder.append("\n");
@@ -116,18 +116,18 @@ public class Deal {
 			}
 			builder.append("|");
 			builder.append(getQuantity()[counter]);
-			builder.append(" шт.\t\t");
+			builder.append(" С€С‚.\t\t");
 			builder.append("|");
 			builder.append(getStackPrice()[counter]);
-			builder.append(" руб.");
+			builder.append(" СЂСѓР±.");
 			counter++;
 		}
 		builder.append("\n-------------------------------------------------------");
-		builder.append("\nИтого к оплате: \t\t|");
+		builder.append("\nРС‚РѕРіРѕ Рє РѕРїР»Р°С‚Рµ: \t\t|");
 		builder.append(totalPrice);
-		builder.append(" руб.");
+		builder.append(" СЂСѓР±.");
 		builder.append("\n_______________________________________________________");
-		builder.append("\nСрок оплаты - не позднее ");
+		builder.append("\nРЎСЂРѕРє РѕРїР»Р°С‚С‹ - РЅРµ РїРѕР·РґРЅРµРµ ");
 		builder.append(getDeadlineDate());
 
 		return builder.toString();
@@ -145,13 +145,13 @@ public class Deal {
 		boolean buyMore = true;
 		int counter = 0;
 		while (buyMore) {
-			System.out.println("Введите наименование необходимого товара");
+			System.out.println("Р’РІРµРґРёС‚Рµ РЅР°РёРјРµРЅРѕРІР°РЅРёРµ РЅРµРѕР±С…РѕРґРёРјРѕРіРѕ С‚РѕРІР°СЂР°");
 			String good = sc.next();
 			good = good.toLowerCase();
 			for (Product p : Pricelist.getProduct()) {
 				if (p.getProductName().toLowerCase().contentEquals(good)) {
 
-					System.out.println("Введите необходимое количество данного товара");
+					System.out.println("Р’РІРµРґРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РґР°РЅРЅРѕРіРѕ С‚РѕРІР°СЂР°");
 					int q = sc.nextInt();
 					productsList.add(counter, p);
 					quantitiesList.add(counter, q);
@@ -162,19 +162,19 @@ public class Deal {
 			}
 
 			do {
-				System.out.println("Желаете совершить ещё покупку? (да/нет)");
+				System.out.println("Р–РµР»Р°РµС‚Рµ СЃРѕРІРµСЂС€РёС‚СЊ РµС‰С‘ РїРѕРєСѓРїРєСѓ? (РґР°/РЅРµС‚)");
 				wannaBuy = sc.next();
 				wannaBuy = wannaBuy.toLowerCase();
 				buyMore = false;
-			} while (!((wannaBuy.contentEquals("да") || (wannaBuy.contentEquals("нет")))));
-			if (wannaBuy.contentEquals("да")) {
+			} while (!((wannaBuy.contentEquals("РґР°") || (wannaBuy.contentEquals("РЅРµС‚")))));
+			if (wannaBuy.contentEquals("РґР°")) {
 				buyMore = true;
 			}
 		}
 		setDealProduct(productsList.toArray(new Product[productsList.size()]));
 		setQuantity(quantitiesList.toArray(new Integer[productsList.size()]));
 		setStackPrice(stackPrices.toArray(new Double[productsList.size()]));
-//		sc.close(); не используется, т.к. крашит программу. Scanner закроется при её завершении.
+//		sc.close(); РЅРµ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ, С‚.Рє. РєСЂР°С€РёС‚ РїСЂРѕРіСЂР°РјРјСѓ. Scanner Р·Р°РєСЂРѕРµС‚СЃСЏ РїСЂРё РµС‘ Р·Р°РІРµСЂС€РµРЅРёРё.
 	}
 
 	@SuppressWarnings("resource")
@@ -197,7 +197,7 @@ public class Deal {
 		boolean buyMore = true;
 		boolean inList;
 		while (buyMore) {
-			System.out.println("Введите наименование необходимого товара");
+			System.out.println("Р’РІРµРґРёС‚Рµ РЅР°РёРјРµРЅРѕРІР°РЅРёРµ РЅРµРѕР±С…РѕРґРёРјРѕРіРѕ С‚РѕРІР°СЂР°");
 			String good = sc.next();
 			good = good.toLowerCase();
 			inList = false;
@@ -218,7 +218,7 @@ public class Deal {
 
 			for (Product p : Pricelist.getProduct()) {
 				if (p.getProductName().toLowerCase().contentEquals(good)) {
-					System.out.println("Введите необходимое количество данного товара");
+					System.out.println("Р’РІРµРґРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РґР°РЅРЅРѕРіРѕ С‚РѕРІР°СЂР°");
 					int q = sc.nextInt();
 
 					if (inList) {
@@ -239,19 +239,19 @@ public class Deal {
 				}
 			}
 			do {
-				System.out.println("Желаете совершить ещё покупку? (да/нет)");
+				System.out.println("Р–РµР»Р°РµС‚Рµ СЃРѕРІРµСЂС€РёС‚СЊ РµС‰С‘ РїРѕРєСѓРїРєСѓ? (РґР°/РЅРµС‚)");
 				wannaBuy = sc.next();
 				wannaBuy = wannaBuy.toLowerCase();
 				buyMore = false;
-			} while (!((wannaBuy.contentEquals("да") || (wannaBuy.contentEquals("нет")))));
-			if (wannaBuy.contentEquals("да")) {
+			} while (!((wannaBuy.contentEquals("РґР°") || (wannaBuy.contentEquals("РЅРµС‚")))));
+			if (wannaBuy.contentEquals("РґР°")) {
 				buyMore = true;
 			}
 		}
 		setDealProduct(productsList1.toArray(new Product[productsList1.size()]));
 		setQuantity(quantitiesList1.toArray(new Integer[productsList1.size()]));
 		setStackPrice(stackPrices1.toArray(new Double[productsList1.size()]));
-//		sc.close(); не используется, т.к. крашит программу. Scanner закроется при её завершении.
+//		sc.close(); РЅРµ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ, С‚.Рє. РєСЂР°С€РёС‚ РїСЂРѕРіСЂР°РјРјСѓ. Scanner Р·Р°РєСЂРѕРµС‚СЃСЏ РїСЂРё РµС‘ Р·Р°РІРµСЂС€РµРЅРёРё.
 	}
 
 	@SuppressWarnings("resource")
@@ -270,7 +270,7 @@ public class Deal {
 		for (double p : getStackPrice()) {
 			stackPrices1.add(p);
 		}
-		System.out.println("Введите наименование необходимого товара");
+		System.out.println("Р’РІРµРґРёС‚Рµ РЅР°РёРјРµРЅРѕРІР°РЅРёРµ РЅРµРѕР±С…РѕРґРёРјРѕРіРѕ С‚РѕРІР°СЂР°");
 		String good = sc.next();
 		good = good.toLowerCase();
 		for (Product p : dealProducts) {
@@ -285,7 +285,7 @@ public class Deal {
 		setDealProduct(productsList1.toArray(new Product[productsList1.size()]));
 		setQuantity(quantitiesList1.toArray(new Integer[productsList1.size()]));
 		setStackPrice(stackPrices1.toArray(new Double[productsList1.size()]));
-//		sc.close(); не используется, т.к. крашит программу. Scanner закроется при её завершении.
+//		sc.close(); РЅРµ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ, С‚.Рє. РєСЂР°С€РёС‚ РїСЂРѕРіСЂР°РјРјСѓ. Scanner Р·Р°РєСЂРѕРµС‚СЃСЏ РїСЂРё РµС‘ Р·Р°РІРµСЂС€РµРЅРёРё.
 	}
 
 	public DealStatus getStatus() {

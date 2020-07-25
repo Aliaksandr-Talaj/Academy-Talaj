@@ -40,18 +40,18 @@ public class Reader {
 	}
 
 	public void returnBook(Book... books) {
-		System.out.println(this.fio + " вернул книги: ");
+		System.out.println(this.fio + " РІРµСЂРЅСѓР» РєРЅРёРіРё: ");
 		for (int i = 0; i < books.length; i++) {
 			System.out.print(books[i].getBookName() + "\n");
 		}
 	}
 
 	public void returnBook(int quantity) {
-		System.out.println(this.fio + " вернул " + quantity + " книг");
+		System.out.println(this.fio + " РІРµСЂРЅСѓР» " + quantity + " РєРЅРёРі");
 	}
 
 	public void returnBook(String... strings) {
-		System.out.println(this.fio + " вернул книги: ");
+		System.out.println(this.fio + " РІРµСЂРЅСѓР» РєРЅРёРіРё: ");
 		for (int i = 0; i < strings.length; i++) {
 			System.out.print(strings[i] + " ");
 		}
@@ -82,18 +82,18 @@ public class Reader {
 	}
 
 	public void takeBook(Book... books) {
-		System.out.println(this.fio + " взял книги: ");
+		System.out.println(this.fio + " РІР·СЏР» РєРЅРёРіРё: ");
 		for (int i = 0; i < books.length; i++) {
 			System.out.print(books[i].getBookName() + " ");
 		}
 	}
 
 	public void takeBook(int quantity) {
-		System.out.println(this.fio + " взял " + quantity + " книг");
+		System.out.println(this.fio + " РІР·СЏР» " + quantity + " РєРЅРёРі");
 	}
 
 	public void takeBook(String... strings) {
-		System.out.println(this.fio + " взял книги: ");
+		System.out.println(this.fio + " РІР·СЏР» РєРЅРёРіРё: ");
 		for (int i = 0; i < strings.length; i++) {
 			System.out.print(strings[i] + " ");
 		}

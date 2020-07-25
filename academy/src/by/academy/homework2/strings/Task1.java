@@ -2,19 +2,19 @@ package by.academy.homework2.strings;
 
 import java.util.Scanner;
 
-/* Ввести n строк с консоли,
- * найти самую короткую и самую длинную строки. 
- * Вывести найденные строки и их длину.*/
+/* Р’РІРµСЃС‚Рё n СЃС‚СЂРѕРє СЃ РєРѕРЅСЃРѕР»Рё,
+ * РЅР°Р№С‚Рё СЃР°РјСѓСЋ РєРѕСЂРѕС‚РєСѓСЋ Рё СЃР°РјСѓСЋ РґР»РёРЅРЅСѓСЋ СЃС‚СЂРѕРєРё. 
+ * Р’С‹РІРµСЃС‚Рё РЅР°Р№РґРµРЅРЅС‹Рµ СЃС‚СЂРѕРєРё Рё РёС… РґР»РёРЅСѓ.*/
 
 public class Task1 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Количество строк: ");
+		System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂРѕРє: ");
 		int n = sc.nextInt();
 		String[] strings = new String[n];
 		for (int i = 0; i < n; i++) {
-			System.out.println("строка №" + (i + 1));
+			System.out.println("СЃС‚СЂРѕРєР° в„–" + (i + 1));
 			strings[i] = sc.next();
 		}
 		sc.close();
@@ -28,19 +28,19 @@ public class Task1 {
 				minLengthString = i;
 			}
 		}
-		System.out.println("\nСамые короткие строки: ");
+		System.out.println("\nРЎР°РјС‹Рµ РєРѕСЂРѕС‚РєРёРµ СЃС‚СЂРѕРєРё: ");
 		for (String i : strings) {
 			if (i.length() == minLengthString.length()) {
 				System.out.print(i + " ");
 			}
 		}
-		System.out.println("\nс количеством символов:" + minLengthString.length());
-		System.out.println("\nСамые длинные строки: ");
+		System.out.println("\nСЃ РєРѕР»РёС‡РµСЃС‚РІРѕРј СЃРёРјРІРѕР»РѕРІ:" + minLengthString.length());
+		System.out.println("\nРЎР°РјС‹Рµ РґР»РёРЅРЅС‹Рµ СЃС‚СЂРѕРєРё: ");
 		for (String i : strings) {
 			if (i.length() == maxLengthString.length()) {
 				System.out.print(i + " ");
 			}
 		}
-		System.out.println("\nс количеством символов:" + maxLengthString.length());
+		System.out.println("\nСЃ РєРѕР»РёС‡РµСЃС‚РІРѕРј СЃРёРјРІРѕР»РѕРІ:" + maxLengthString.length());
 	}
 }

@@ -5,26 +5,26 @@ import java.util.Scanner;
 public class Task2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Введите тип переменной");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‚РёРї РїРµСЂРµРјРµРЅРЅРѕР№");
 		String vType = sc.nextLine();
-		System.out.println("Введите значение переменной");
+		System.out.println("Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ РїРµСЂРµРјРµРЅРЅРѕР№");
 		switch (vType) {
 		case "int":
 			int i = sc.nextInt();
-			System.out.println("Остаток от деления на 2 равен " + i % 2);
+			System.out.println("РћСЃС‚Р°С‚РѕРє РѕС‚ РґРµР»РµРЅРёСЏ РЅР° 2 СЂР°РІРµРЅ " + i % 2);
 			break;
 		case "double":
 			double d = sc.nextDouble();
-			System.out.println("70% от числа составляет " + 0.7 * d);
+			System.out.println("70% РѕС‚ С‡РёСЃР»Р° СЃРѕСЃС‚Р°РІР»СЏРµС‚ " + 0.7 * d);
 			break;
 		case "float":
 			float f = sc.nextFloat();
-			System.out.println("Квадрат значения равен " + f * f);
+			System.out.println("РљРІР°РґСЂР°С‚ Р·РЅР°С‡РµРЅРёСЏ СЂР°РІРµРЅ " + f * f);
 			break;
 		case "char":
 			String s = sc.nextLine();
 			char c = s.charAt(0);
-			System.out.println("Код символа " + (int) c);
+			System.out.println("РљРѕРґ СЃРёРјРІРѕР»Р° " + (int) c);
 			break;
 		case "String":
 			String str = sc.nextLine();

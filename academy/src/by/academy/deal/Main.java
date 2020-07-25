@@ -12,7 +12,7 @@ public class Main {
 		deal1.setSeller(sidor);
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Введите имя покупателя");
+		System.out.println("Р’РІРµРґРёС‚Рµ РёРјСЏ РїРѕРєСѓРїР°С‚РµР»СЏ");
 
 		User stalker = new User(sc.next());
 		deal1.setBuyer(stalker);
@@ -21,18 +21,18 @@ public class Main {
 		DateValidator dateVal = new DateValidator();
 		String uInput;
 		do {
-			System.out.println("Введите email");
+			System.out.println("Р’РІРµРґРёС‚Рµ email");
 			uInput = sc.next();
 		} while (eVal.isntValid(uInput));
 		deal1.getBuyer().setEmail(uInput);
 		do {
-			System.out.println("Введите номер телефона в формате \"+375(--)-------\"");
+			System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР° РІ С„РѕСЂРјР°С‚Рµ \"+375(--)-------\"");
 			uInput = sc.next();
 
 		} while (telVal.isntValid(uInput));
 		deal1.getBuyer().setTelNumber(uInput);
 		do {
-			System.out.println("Введите дату рождения в формате dd-mm-yyyy или dd/mm/yyyy");
+			System.out.println("Р’РІРµРґРёС‚Рµ РґР°С‚Сѓ СЂРѕР¶РґРµРЅРёСЏ РІ С„РѕСЂРјР°С‚Рµ dd-mm-yyyy РёР»Рё dd/mm/yyyy");
 			uInput = sc.next();
 
 		} while (dateVal.isntValid(uInput));
@@ -44,25 +44,25 @@ public class Main {
 		System.out.println();
 		String wannaBuy;
 		do {
-			System.out.println("Желаете совершить покупку? (да/нет)");
+			System.out.println("Р–РµР»Р°РµС‚Рµ СЃРѕРІРµСЂС€РёС‚СЊ РїРѕРєСѓРїРєСѓ? (РґР°/РЅРµС‚)");
 			wannaBuy = sc.next();
 			wannaBuy = wannaBuy.toLowerCase();
-		} while (!((wannaBuy.contentEquals("да") || (wannaBuy.contentEquals("нет")))));
-		if (wannaBuy.contentEquals("да")) {
+		} while (!((wannaBuy.contentEquals("РґР°") || (wannaBuy.contentEquals("РЅРµС‚")))));
+		if (wannaBuy.contentEquals("РґР°")) {
 			deal1.vending();
 			do {
 				System.out.println(deal1.toString());
 				System.out.println();
 				do {
-				System.out.println("Завершить сделку? (да/нет)");
-				uInput = sc.next();
-				} while (!((uInput.contentEquals("да") || (uInput.contentEquals("нет")))));
-				if (uInput.contentEquals("да")) {
+					System.out.println("Р—Р°РІРµСЂС€РёС‚СЊ СЃРґРµР»РєСѓ? (РґР°/РЅРµС‚)");
+					uInput = sc.next();
+				} while (!((uInput.contentEquals("РґР°") || (uInput.contentEquals("РЅРµС‚")))));
+				if (uInput.contentEquals("РґР°")) {
 					deal1.finishDeal();
 				} else {
 
 					System.out.println(
-							"Хотите добавить(1) или удалить(2) товар? Введите (3), чтобы завершить сделку или (4), чтобы увидеть список товаров и счет");
+							"РҐРѕС‚РёС‚Рµ РґРѕР±Р°РІРёС‚СЊ(1) РёР»Рё СѓРґР°Р»РёС‚СЊ(2) С‚РѕРІР°СЂ? Р’РІРµРґРёС‚Рµ (3), С‡С‚РѕР±С‹ Р·Р°РІРµСЂС€РёС‚СЊ СЃРґРµР»РєСѓ РёР»Рё (4), С‡С‚РѕР±С‹ СѓРІРёРґРµС‚СЊ СЃРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ Рё СЃС‡РµС‚");
 					int i = sc.nextInt();
 					switch (i) {
 					case 1:
@@ -70,7 +70,7 @@ public class Main {
 						break;
 					case 2:
 						if (deal1.getDealProduct().length == 0) {
-							System.out.println("Список товаров пуст!");
+							System.out.println("РЎРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ РїСѓСЃС‚!");
 							break;
 						}
 						deal1.deleteProduct(deal1.getDealProduct(), deal1.getQuantity(), deal1.getStackPrice());
@@ -85,7 +85,7 @@ public class Main {
 				}
 			} while (deal1.getStatus() != DealStatus.DONE);
 		}
-		System.out.println("Ну, удачной охоты!)");
+		System.out.println("РќСѓ, СѓРґР°С‡РЅРѕР№ РѕС…РѕС‚С‹!)");
 
 		sc.close();
 

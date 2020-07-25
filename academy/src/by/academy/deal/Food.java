@@ -1,21 +1,21 @@
 package by.academy.deal;
 
-@ProducerInfo(company="Колхоз \"Ник\"", name = "", number = 2020317, productType = {"продукт питания","алкоголь"})
+@ProducerInfo(company = "РљРѕР»С…РѕР· \"РќРёРє\"", name = "", number = 2020317, productType = { "РїСЂРѕРґСѓРєС‚ РїРёС‚Р°РЅРёСЏ", "Р°Р»РєРѕРіРѕР»СЊ" })
 class Food extends Product {
 
-public Food(String productName, double price, String productDescription) {
-	super();
-	this.productName = productName;
-	this.price = price;
-	this.productDescription = productDescription;
-}
+	public Food(String productName, double price, String productDescription) {
+		super();
+		this.productName = productName;
+		this.price = price;
+		this.productDescription = productDescription;
+	}
 
-public Food(String productName, double price, String productDescription, int discountPercent) {
-	super();
-	this.productName = productName;
-	this.price = price;
-	this.productDescription = productDescription;
-	this.discountPercent = discountPercent;
+	public Food(String productName, double price, String productDescription, int discountPercent) {
+		super();
+		this.productName = productName;
+		this.price = price;
+		this.productDescription = productDescription;
+		this.discountPercent = discountPercent;
 
-}
+	}
 }

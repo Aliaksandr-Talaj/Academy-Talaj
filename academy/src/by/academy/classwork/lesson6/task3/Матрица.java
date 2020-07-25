@@ -2,52 +2,57 @@ package by.academy.classwork.lesson6.task3;
 
 import java.util.Arrays;
 
-public class Матрица {
-	
-	private double [][] matrix;
+public class РњР°С‚СЂРёС†Р° {
+
+	private double[][] matrix;
 	private int rows;
 	private int columns;
-	
-	public Матрица() {
+
+	public РњР°С‚СЂРёС†Р°() {
 		super();
 	}
-	public Матрица(double [][] matrix, int rows, int columns){
+
+	public РњР°С‚СЂРёС†Р°(double[][] matrix, int rows, int columns) {
 		this.rows = rows;
 		this.columns = columns;
 		this.matrix = Arrays.copyOf(matrix, matrix.length);
 	}
-	
-	public double[][] getMatrix(){
+
+	public double[][] getMatrix() {
 		return this.matrix;
 	}
-	public double[][] multiplying(int multiplyer){
-		for (int i=0; i<this.rows;i++) {
-			for (int j=0; j<this.columns; j++) {
-				this.matrix[i][j]=multiplyer*this.matrix[i][j];
+
+	public double[][] multiplying(int multiplyer) {
+		for (int i = 0; i < this.rows; i++) {
+			for (int j = 0; j < this.columns; j++) {
+				this.matrix[i][j] = multiplyer * this.matrix[i][j];
 			}
 		}
 		return this.matrix;
 	}
-	public void printMatrix(){
-		for (int i=0; i<rows;i++) {
-			for (int j=0; j<columns; j++) {
-				System.out.print(this.matrix[i][j]+"\t");
+
+	public void printMatrix() {
+		for (int i = 0; i < rows; i++) {
+			for (int j = 0; j < columns; j++) {
+				System.out.print(this.matrix[i][j] + "\t");
 			}
 			System.out.println();
 		}
 	}
-	public void setMatrix(double [][] matrix, int rows, int columns){
+
+	public void setMatrix(double[][] matrix, int rows, int columns) {
 		this.rows = rows;
 		this.columns = columns;
 		this.matrix = Arrays.copyOf(matrix, matrix.length);
 	}
-	public double[][] summing(double [][] matrix){
-		for (int i=0; i<this.rows;i++) {
-			for (int j=0; j<this.columns; j++) {
-				this.matrix[i][j]=this.matrix[i][j]+matrix[i][j];
+
+	public double[][] summing(double[][] matrix) {
+		for (int i = 0; i < this.rows; i++) {
+			for (int j = 0; j < this.columns; j++) {
+				this.matrix[i][j] = this.matrix[i][j] + matrix[i][j];
 			}
 		}
 		return this.matrix;
 	}
-	
+
 }

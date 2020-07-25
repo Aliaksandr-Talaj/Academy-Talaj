@@ -37,11 +37,11 @@ public class Phone {
 	}
 
 	public void receiveCall(String name) {
-		System.out.println("Звонит " + name);
+		System.out.println("Р—РІРѕРЅРёС‚ " + name);
 	}
 
 	public void receiveCall(String name, String number) {
-		System.out.println("Звонит " + name + ", номер: " + number);
+		System.out.println("Р—РІРѕРЅРёС‚ " + name + ", РЅРѕРјРµСЂ: " + number);
 	}
 
 	public void sendMessage(String... strings) {

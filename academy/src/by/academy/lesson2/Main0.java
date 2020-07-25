@@ -4,48 +4,48 @@ import java.util.Scanner;
 
 public class Main0 {
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner (System.in);
-		String month=scanner.nextLine();
+		Scanner scanner = new Scanner(System.in);
+		String month = scanner.nextLine();
 		scanner.close();
 		switch (month) {
-	case "январь":	
-		System.out.println("1");
-		break;
-	case "февраль":
-		System.out.println("2");
-		break;
-	case "март":
-		System.out.println("3");
-		break;
-	case "апрель":
-		System.out.println("4");
-		break;	
-	case "май":
-		System.out.println("5");
-		break;	
-	case "июнь":
-		System.out.println("6");
-		break;	
-	case "июль":
-		System.out.println("7");
-		break;
-	case "август":
-		System.out.println("8");
-		break;
-	case "сентябрь":
-		System.out.println("9");
-		break;
-	case "октябрь":
-		System.out.println("10");
-		break;
-	case "ноябрь":
-		System.out.println("11");
-		break;
-	case "декабрь":
-		System.out.println("12");
-		break;	
-	default:
-		System.out.println("нет такого месяца");
+		case "СЏРЅРІР°СЂСЊ":
+			System.out.println("1");
+			break;
+		case "С„РµРІСЂР°Р»СЊ":
+			System.out.println("2");
+			break;
+		case "РјР°СЂС‚":
+			System.out.println("3");
+			break;
+		case "Р°РїСЂРµР»СЊ":
+			System.out.println("4");
+			break;
+		case "РјР°Р№":
+			System.out.println("5");
+			break;
+		case "РёСЋРЅСЊ":
+			System.out.println("6");
+			break;
+		case "РёСЋР»СЊ":
+			System.out.println("7");
+			break;
+		case "Р°РІРіСѓСЃС‚":
+			System.out.println("8");
+			break;
+		case "СЃРµРЅС‚СЏР±СЂСЊ":
+			System.out.println("9");
+			break;
+		case "РѕРєС‚СЏР±СЂСЊ":
+			System.out.println("10");
+			break;
+		case "РЅРѕСЏР±СЂСЊ":
+			System.out.println("11");
+			break;
+		case "РґРµРєР°Р±СЂСЊ":
+			System.out.println("12");
+			break;
+		default:
+			System.out.println("РЅРµС‚ С‚Р°РєРѕРіРѕ РјРµСЃСЏС†Р°");
 		}
 	}
 }

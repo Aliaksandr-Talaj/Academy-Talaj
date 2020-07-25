@@ -2,15 +2,15 @@ package by.academy.homework2.strings;
 
 import java.util.Scanner;
 
-/* Используя оператор switch, написать программу,
- * которая выводит на экран сообщения о принадлежности
- * некоторого значения k интервалам
+/* РСЃРїРѕР»СЊР·СѓСЏ РѕРїРµСЂР°С‚РѕСЂ switch, РЅР°РїРёСЃР°С‚СЊ РїСЂРѕРіСЂР°РјРјСѓ,
+ * РєРѕС‚РѕСЂР°СЏ РІС‹РІРѕРґРёС‚ РЅР° СЌРєСЂР°РЅ СЃРѕРѕР±С‰РµРЅРёСЏ Рѕ РїСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚Рё
+ * РЅРµРєРѕС‚РѕСЂРѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ k РёРЅС‚РµСЂРІР°Р»Р°Рј
  * (-10k, 5], [0, 10], [5, 15], [10, 10k].*/
 
 public class Task11 {
 
 	public static void main(String[] args) {
-		System.out.println("Введите число k:");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ k:");
 		Scanner sc = new Scanner(System.in);
 		double k = sc.nextDouble();
 		sc.close();
@@ -32,30 +32,30 @@ public class Task11 {
 		}
 		switch ((int) k) {
 		case 5:
-			System.out.println("Входит в интервалы [-10k, 5], [0, 10] и [5, 15]");
+			System.out.println("Р’С…РѕРґРёС‚ РІ РёРЅС‚РµСЂРІР°Р»С‹ [-10k, 5], [0, 10] Рё [5, 15]");
 			break;
 		case 10:
-			System.out.println("Входит в интервалы [0, 10], [5, 15] и [10, 10k]");
+			System.out.println("Р’С…РѕРґРёС‚ РІ РёРЅС‚РµСЂРІР°Р»С‹ [0, 10], [5, 15] Рё [10, 10k]");
 			break;
 		default:
 			switch (i) {
 			case 1:
-				System.out.println("Входит в интервал [-10k, 5]");
+				System.out.println("Р’С…РѕРґРёС‚ РІ РёРЅС‚РµСЂРІР°Р» [-10k, 5]");
 				break;
 			case 2:
-				System.out.println("Входит в интервалы [-10k, 5] и [0, 10]");
+				System.out.println("Р’С…РѕРґРёС‚ РІ РёРЅС‚РµСЂРІР°Р»С‹ [-10k, 5] Рё [0, 10]");
 				break;
 			case 3:
-				System.out.println("Входит в интервалы [0, 10] и [5, 15]");
+				System.out.println("Р’С…РѕРґРёС‚ РІ РёРЅС‚РµСЂРІР°Р»С‹ [0, 10] Рё [5, 15]");
 				break;
 			case 4:
-				System.out.println("Входит в интервалы [5, 15] и [10, 10k]");
+				System.out.println("Р’С…РѕРґРёС‚ РІ РёРЅС‚РµСЂРІР°Р»С‹ [5, 15] Рё [10, 10k]");
 				break;
 			case 5:
-				System.out.println("Входит в интервалы [10, 10k]");
+				System.out.println("Р’С…РѕРґРёС‚ РІ РёРЅС‚РµСЂРІР°Р»С‹ [10, 10k]");
 				break;
 			default:
-				System.out.println("Не входит ни в один из интервалов");
+				System.out.println("РќРµ РІС…РѕРґРёС‚ РЅРё РІ РѕРґРёРЅ РёР· РёРЅС‚РµСЂРІР°Р»РѕРІ");
 			}
 		}
 	}

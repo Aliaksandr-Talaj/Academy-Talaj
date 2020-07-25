@@ -19,14 +19,14 @@ public class Main {
 		phone2.setName("Mr. Pups");
 		phone3.setName("Mr. Max");
 
-		System.out.println("\nНомер телефона:\t\t" + phone1.getNumber() + "\nМодель телефона:\t" + phone1.getModel()
-				+ "\nВес телефона, г:\t" + phone1.getWeight());
+		System.out.println("\nРќРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°:\t\t" + phone1.getNumber() + "\nРњРѕРґРµР»СЊ С‚РµР»РµС„РѕРЅР°:\t" + phone1.getModel()
+				+ "\nР’РµСЃ С‚РµР»РµС„РѕРЅР°, Рі:\t" + phone1.getWeight());
 
-		System.out.println("\nНомер телефона:\t\t" + phone2.getNumber() + "\nМодель телефона:\t" + phone2.getModel()
-				+ "\nВес телефона, г:\t" + phone2.getWeight());
+		System.out.println("\nРќРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°:\t\t" + phone2.getNumber() + "\nРњРѕРґРµР»СЊ С‚РµР»РµС„РѕРЅР°:\t" + phone2.getModel()
+				+ "\nР’РµСЃ С‚РµР»РµС„РѕРЅР°, Рі:\t" + phone2.getWeight());
 
-		System.out.println("\nНомер телефона:\t\t" + phone3.getNumber() + "\nМодель телефона:\t" + phone3.getModel()
-				+ "\nВес телефона, г:\t" + phone3.getWeight());
+		System.out.println("\nРќРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°:\t\t" + phone3.getNumber() + "\nРњРѕРґРµР»СЊ С‚РµР»РµС„РѕРЅР°:\t" + phone3.getModel()
+				+ "\nР’РµСЃ С‚РµР»РµС„РѕРЅР°, Рі:\t" + phone3.getWeight());
 
 		phone1.receiveCall(phone2.getName());
 		phone1.getNumber();
