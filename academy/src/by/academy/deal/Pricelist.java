@@ -22,4 +22,20 @@ public final class Pricelist {
 		return pricelist;
 	}
 
+	public static void print() {
+		System.out.println("Список товаров:\n");
+		System.out.println("Наименование\t\t\tЦена, руб\tСкидка, %\tОписание товара");
+
+		for (Product p : Pricelist.getProduct()) {
+			System.out.print("\n" + p.getProductName() + "\t\t\t");
+			int i = p.getProductName().length();
+			while (i < 8) {
+				System.out.print("\t");
+				i += 4;
+			}
+			System.out
+					.print(p.getProductPrice() + "\t\t\t" + p.getDiscountPercent() + "\t" + p.getProductDescription());
+		}
+	}
+	
 }

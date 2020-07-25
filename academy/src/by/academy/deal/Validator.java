@@ -1,5 +1,5 @@
 package by.academy.deal;
 
 public interface Validator {
-	boolean isValid(String testString);
+	public boolean isntValid(String testString);
 }
