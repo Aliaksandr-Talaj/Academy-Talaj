@@ -6,13 +6,13 @@ import java.util.regex.Pattern;
 public class Task1 {
 
 	public static void main(String[] args) {
-		String [] tests1 = {"50/50/5555","17/10/1947","18/13/3487","16/02/1952"};
-		String [] tests2 = {"50-50-5555","17-10-1947","18-13-3487","16-02-1952"};
-		
+		String[] tests1 = { "50/50/5555", "17/10/1947", "18/13/3487", "16/02/1952" };
+		String[] tests2 = { "50-50-5555", "17-10-1947", "18-13-3487", "16-02-1952" };
+
 		Pattern p1 = Pattern.compile("");
 		Pattern p2 = Pattern.compile("");
-		
-		for (String i: tests1) {
+
+		for (String i : tests1) {
 			Matcher m1 = p1.matcher(i);
 			if (m1.find()) {
 				System.out.println(m1.group(0));
@@ -20,7 +20,7 @@ public class Task1 {
 				System.out.println("failed");
 			}
 		}
-		for (String i: tests2) {
+		for (String i : tests2) {
 			Matcher m2 = p2.matcher(i);
 			if (m2.find()) {
 				System.out.println(m2.group(0));
@@ -28,7 +28,7 @@ public class Task1 {
 				System.out.println("failed");
 			}
 		}
-		
+
 	}
 
 }

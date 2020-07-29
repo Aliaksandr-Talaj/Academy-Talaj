@@ -46,10 +46,10 @@ public class Матрица {
 		this.matrix = Arrays.copyOf(matrix, matrix.length);
 	}
 
-	public double[][] summing(double[][] matrix) {
+	public double[][] summing(Матрица matr) {
 		for (int i = 0; i < this.rows; i++) {
 			for (int j = 0; j < this.columns; j++) {
-				this.matrix[i][j] = this.matrix[i][j] + matrix[i][j];
+				this.matrix[i][j] = this.matrix[i][j] + matr.matrix[i][j];
 			}
 		}
 		return this.matrix;

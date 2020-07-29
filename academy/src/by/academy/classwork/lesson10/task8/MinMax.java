@@ -1,4 +1,4 @@
-package by.academy.classwork.lesson10;
+package by.academy.classwork.lesson10.task8;
 
 public class MinMax<T extends Number> {
 
@@ -14,7 +14,7 @@ public class MinMax<T extends Number> {
 			minimal = array[0].doubleValue();
 
 			for (T value : array) {
-				if (minimal > value.byteValue()) {
+				if (minimal > value.doubleValue()) {
 					minimal = value.doubleValue();
 				}
 			}

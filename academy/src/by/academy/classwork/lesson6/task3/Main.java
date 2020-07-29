@@ -17,7 +17,7 @@ public class Main {
 		matrix1.printMatrix();
 		System.out.println("\nСложение результата и матрицы 2:");
 
-		matrix1.summing(m2);
+		matrix1.summing(matrix2);
 		matrix1.printMatrix();
 
 	}

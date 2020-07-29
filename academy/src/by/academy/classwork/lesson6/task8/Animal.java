@@ -1,6 +1,12 @@
 package by.academy.classwork.lesson6.task8;
 
-public class Animal {
+import java.io.Serializable;
+
+public class Animal implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	String name;
 	String food;
 	String location;
