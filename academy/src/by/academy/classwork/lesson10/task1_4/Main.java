@@ -11,15 +11,12 @@ public class Main {
 
 		query.printToLog();
 		query2.printToLog();
-			
-		user.printWithLocal("Logen","NineFingers");
-		
+
+		user.printWithLocal("Logen", "NineFingers");
+
 		System.out.println(User.UserAgreement.getAgreement());
-		
+
 		user.anonimous.print();
 	}
-	
-	
-	
-	
+
 }
