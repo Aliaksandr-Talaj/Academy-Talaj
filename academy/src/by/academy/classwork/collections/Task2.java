@@ -3,7 +3,7 @@ package by.academy.classwork.collections;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class Task12 {
+public class Task2 {
 
 	public static void main(String[] args) {
 
