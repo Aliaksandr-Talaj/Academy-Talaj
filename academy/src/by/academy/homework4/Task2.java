@@ -17,12 +17,12 @@ public class Task2 {
 			marks.add((int) (Math.random() * 100));
 		}
 
-		Iterator <Integer> iterator = marks.iterator();
+		Iterator<Integer> iterator = marks.iterator();
 		Integer maxMark = 0;
-		int temp =0;
+		int temp = 0;
 		while (iterator.hasNext()) {
-			temp = iterator.next();  
-			if (temp>maxMark) {
+			temp = iterator.next();
+			if (temp > maxMark) {
 				maxMark = temp;
 			}
 		}

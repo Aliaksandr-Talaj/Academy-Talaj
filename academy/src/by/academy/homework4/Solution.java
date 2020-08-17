@@ -73,9 +73,7 @@ public class Solution {
 				pointer.prev = temp;
 				head = pointer;
 				pointer = pointer.prev;
-				
 			}
-			
 			return head;
 		}
 	}
@@ -91,7 +89,7 @@ public class Solution {
 
 		for (int i = 0; i < llistCount; i++) {
 			int llistItem = scanner.nextInt();
-		scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+			scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
 			llist.insertNode(llistItem);
 		}
