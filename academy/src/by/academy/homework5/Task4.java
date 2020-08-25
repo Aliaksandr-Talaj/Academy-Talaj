@@ -90,6 +90,6 @@ public class Task4 {
 		}
 
 		System.out.println("Everything seems to be OK");
-		
+
 	}
 }
