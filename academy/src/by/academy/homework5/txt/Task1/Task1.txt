@@ -1,0 +1,3 @@
+First string
+the second one
+and the third one too

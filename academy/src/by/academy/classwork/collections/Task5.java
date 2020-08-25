@@ -16,7 +16,7 @@ public class Task5 {
 
 			@Override
 			public int compareTo(Number n) {
-			if n
+			
 				
 				return 0;
 			}
