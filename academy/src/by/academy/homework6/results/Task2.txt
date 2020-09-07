@@ -1,0 +1,107 @@
+Методы через getMethod("name"): 
+public void by.academy.homework6.User.printUserInfo()
+public void by.academy.homework6.User.appendUserInfoToFile(java.io.BufferedWriter) throws java.io.IOException
+public java.lang.String by.academy.homework6.User.getEmail()
+public java.lang.String by.academy.homework6.User.getLogin()
+public java.lang.String by.academy.homework6.User.getPassword()
+public java.lang.Integer by.academy.homework6.Person.getAge()
+public java.util.Date by.academy.homework6.Person.getDateOfBirth()
+public java.lang.String by.academy.homework6.Person.getFirstName()
+public java.lang.String by.academy.homework6.Person.getLastName()
+public void by.academy.homework6.User.setEmail(java.lang.String)
+public void by.academy.homework6.User.setLogin(java.lang.String)
+public void by.academy.homework6.User.setPassword(java.lang.String)
+public void by.academy.homework6.Person.setAge(java.lang.Integer)
+public void by.academy.homework6.Person.setDateOfBirth(java.lang.String) throws java.text.ParseException
+public void by.academy.homework6.Person.setFirstName(java.lang.String)
+public void by.academy.homework6.Person.setLastName(java.lang.String)
+
+Методы через getMethods(): 
+public void by.academy.homework6.User.printUserInfo()
+public java.lang.String by.academy.homework6.User.getEmail()
+public java.lang.String by.academy.homework6.User.getLogin()
+public java.lang.String by.academy.homework6.User.getPassword()
+public void by.academy.homework6.User.setEmail(java.lang.String)
+public void by.academy.homework6.User.setLogin(java.lang.String)
+public void by.academy.homework6.User.setPassword(java.lang.String)
+public void by.academy.homework6.User.appendUserInfoToFile(java.io.BufferedWriter) throws java.io.IOException
+public java.lang.Integer by.academy.homework6.Person.getAge()
+public java.util.Date by.academy.homework6.Person.getDateOfBirth()
+public java.lang.String by.academy.homework6.Person.getFirstName()
+public java.lang.String by.academy.homework6.Person.getLastName()
+public void by.academy.homework6.Person.setAge(java.lang.Integer)
+public void by.academy.homework6.Person.setDateOfBirth(java.lang.String) throws java.text.ParseException
+public void by.academy.homework6.Person.setFirstName(java.lang.String)
+public void by.academy.homework6.Person.setLastName(java.lang.String)
+public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+public final void java.lang.Object.wait() throws java.lang.InterruptedException
+public boolean java.lang.Object.equals(java.lang.Object)
+public java.lang.String java.lang.Object.toString()
+public native int java.lang.Object.hashCode()
+public final native java.lang.Class java.lang.Object.getClass()
+public final native void java.lang.Object.notify()
+public final native void java.lang.Object.notifyAll()
+
+Поля через getField("name"): 
+public static java.text.SimpleDateFormat by.academy.homework6.Person.format
+
+Поля через getFields(): 
+public static java.text.SimpleDateFormat by.academy.homework6.Person.format
+
+Методы через getDeclaredMethod("name"): 
+public void by.academy.homework6.User.printUserInfo()
+public java.lang.String by.academy.homework6.User.getEmail()
+public java.lang.String by.academy.homework6.User.getLogin()
+public java.lang.String by.academy.homework6.User.getPassword()
+public void by.academy.homework6.User.setEmail(java.lang.String)
+public void by.academy.homework6.User.setLogin(java.lang.String)
+public void by.academy.homework6.User.setPassword(java.lang.String)
+
+Методы через getDeclaredMethods(): 
+public void by.academy.homework6.User.printUserInfo()
+public java.lang.String by.academy.homework6.User.getEmail()
+public java.lang.String by.academy.homework6.User.getLogin()
+public java.lang.String by.academy.homework6.User.getPassword()
+public void by.academy.homework6.User.setEmail(java.lang.String)
+public void by.academy.homework6.User.setLogin(java.lang.String)
+public void by.academy.homework6.User.setPassword(java.lang.String)
+public void by.academy.homework6.User.appendUserInfoToFile(java.io.BufferedWriter) throws java.io.IOException
+
+Поля через getDeclaredField("name"): 
+private java.lang.String by.academy.homework6.User.email
+private java.lang.String by.academy.homework6.User.login
+private java.lang.String by.academy.homework6.User.password
+private java.lang.Integer by.academy.homework6.Person.age
+private java.util.Date by.academy.homework6.Person.dateOfBirth
+private java.lang.String by.academy.homework6.Person.firstName
+private java.lang.String by.academy.homework6.Person.lastName
+
+Поля через getDeclaredFields(): 
+private java.lang.String by.academy.homework6.User.email
+private java.lang.String by.academy.homework6.User.login
+private java.lang.String by.academy.homework6.User.password
+public static java.text.SimpleDateFormat by.academy.homework6.Person.format
+private java.lang.Integer by.academy.homework6.Person.age
+private java.util.Date by.academy.homework6.Person.dateOfBirth
+private java.lang.String by.academy.homework6.Person.firstName
+private java.lang.String by.academy.homework6.Person.lastName
+
+Вывод текущих значений с помощью invoke метода printUserInfo:
+Login: NineDeaths
+Password: FerroIsHot
+Email: DontWriteToMe@soap.com
+Age: 35
+Date of birth: Wed Feb 01 00:00:00 MSK 2006
+First Name: Logen
+Last name: NineFingers
+
+Вывод изменённых значения полей через get метод класса Field:
+Login: Nine_Deaths
+Password: BethodIsToad
+Email: DontWriteToMeAnyway@soap.com
+Age: 33
+Date of birth: Mon Jan 02 00:00:00 MSK 2006
+First name: LOGEN
+Last name: NINEDEATHS
+
